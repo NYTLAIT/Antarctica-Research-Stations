@@ -1,0 +1,11 @@
+.hero {
+    background-size:
+        auto,
+        cover;
+        padding: 4rem 0 6rem 2rem;
+        color: white;
+}
+
+.hero-text {
+    margin: 1.6rem
+}
