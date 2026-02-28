@@ -1,9 +1,49 @@
 .Header {
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
-    padding: 1em;
-    background-color: white;
-    border-bottom: 4px solid rgb(30, 60, 90);
-    color: rgb(30, 60, 90);
+    justify-content: space-between;
+
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--accent-primary);
+
+    padding: 0 0.2;
+}
+
+.Header .logo {
+    font-family: 'Cormorant Garamond', 'Inter', serif, -apple-system;
+    font-size: clamp(2rem, 2.6vw, 2.8rem);
+    font-weight: 540;
+    line-height: 1.26;
+    letter-spacing: -0.01em;
+    
+    color: var(--text-main);
+    margin: 0 0 0 clamp(0.6rem, 2vw, 3.2rem);
+}
+
+.Header .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: clamp(0.6rem, 2vw ,1rem);
+
+    margin: 0 clamp(0.6rem, 2vw, 3.2rem) 0 0;
+}
+
+.Header .nav-link {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-weight: 540;
+    line-height: 1.26;
+    letter-spacing: -0.01em;
+
+    color: var(--text-main);
+    box-sizing: content-box;
+}
+
+.Header .nav-link:hover {
+    color: var(--accent-primary);
+}
+
+.Header .nav-link-active {
+    text-decoration: underline white clamp(2px, 0.4vw, 4px);
 }

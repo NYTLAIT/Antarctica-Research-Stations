@@ -78,7 +78,8 @@ h1 {
     letter-spacing: -0.02em;
 
     color: var(--text-main);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.4rem 0;
+    padding: 0;
 }
 
 h2 {
@@ -89,7 +90,7 @@ h2 {
     letter-spacing: -0.01em;
 
     color: var(--text-main);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.4rem 0;
 }
 
 /* BODY */
@@ -117,7 +118,15 @@ p .muted {
 /* END FONT ************************************************** */
 
 /* START HYPERLINKS ****************************************** */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
 
+a:hover {
+    color: var(--accent-primary)
+}
 /* END HYPERLINKS ******************************************** */
 
 /*************************************************************/

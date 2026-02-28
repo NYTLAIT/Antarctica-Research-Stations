@@ -20,7 +20,6 @@ implimentation code to further Antarctic Sciences.
 - TOGGLE 'DEFAULT(LIGHT) | DARK' COLOR THEMES (VARIABLE LAYOUT):
 
 ## JSON FILE TEMPLATE:
-
 ```json
 [
     {
