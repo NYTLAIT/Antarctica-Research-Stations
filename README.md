@@ -71,7 +71,7 @@ implimentation code to further Antarctic Sciences.
 
 Notes: 
 - .status: "Active" | "Seasonal" | "Decommissioned" | "Under Construction" | "Abandoned"
-- .external_references[0].type: "official" (operator) | "research_program" (specific scientific project) | "archival" (historical or documented records) | "article" | "blog" | "other"
+- .external_references[0].type: "official" (operator) | "research_program" (specific scientific project) | "archival" (historical or documented records) | "article" | "blog" | "documentary" | "video" |"other" (ex. museum exhibit pages, maps, magazines)
 
 # React + Vite
 
