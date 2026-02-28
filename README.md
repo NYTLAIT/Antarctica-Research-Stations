@@ -21,7 +21,10 @@ implimentation code to further Antarctic Sciences.
 
 ## JSON FILE TEMPLATE:
 
+<<<<<<< HEAD
 ```json
+=======
+>>>>>>> origin
 [
     {
         "id": "",
@@ -73,6 +76,7 @@ implimentation code to further Antarctic Sciences.
 
 Notes: 
 - .status: "Active" | "Seasonal" | "Decommissioned" | "Under Construction" | "Abandoned"
+<<<<<<< HEAD
 - .external_references[0].type: (type, authority, example)
     - "official" | primary | National Antarctic Program
     - "research_program" | primary scientific | Ice Core Initiative
@@ -82,6 +86,9 @@ Notes:
     - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
     - "data_source" | scientific dataset | Climate database
 
+=======
+- .external_references[0].type: "official" (operator) | "research_program" (specific scientific project) | "archival" (historical or documented records) | "article" | "blog" | "documentary" | "video" |"other" (ex. museum exhibit pages, maps, magazines)
+>>>>>>> origin
 
 # React + Vite
 
