@@ -21,10 +21,7 @@ implimentation code to further Antarctic Sciences.
 
 ## JSON FILE TEMPLATE:
 
-<<<<<<< HEAD
 ```json
-=======
->>>>>>> origin
 [
     {
         "id": "",
@@ -85,10 +82,6 @@ Notes:
     - "educational_institutional" | institutional educational | NatGeo Education
     - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
     - "data_source" | scientific dataset | Climate database
-
-=======
-- .external_references[0].type: "official" (operator) | "research_program" (specific scientific project) | "archival" (historical or documented records) | "article" | "blog" | "documentary" | "video" |"other" (ex. museum exhibit pages, maps, magazines)
->>>>>>> origin
 
 # React + Vite
 
