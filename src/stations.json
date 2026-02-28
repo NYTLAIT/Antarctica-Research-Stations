@@ -1,0 +1,47 @@
+[
+    {
+        "id": "",
+        "slug": "",
+
+        "name": "",
+        "country": "",
+        "year_established": null,
+
+        "status": "Active",
+        "operator": "",
+
+        "location": {
+            "location_name": "",
+            "coordinates": {
+                "latitude": null,
+                "longitude": null
+            }
+        },
+        "population": {
+            "summer": null,
+            "winter": null
+        },
+
+        
+
+        "summary": "",
+        "description": "",
+        "historical_note": "",
+        "research_focus": [],
+
+        "external_references": [
+            {
+                "type": "official",
+                "site_name": "",
+                "label": "",
+                "url": ""
+            }
+        ],
+
+        "metadata": {
+            "data_last_updated": "",
+            "data_author_name": "",
+            "review_status": "Unreviewed"
+        }
+    }
+]
