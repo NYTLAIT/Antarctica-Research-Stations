@@ -1,6 +1,11 @@
+/*************************************************************/
+/*---GLOBAL CSS----------------------------------------------*/
+/*************************************************************/
 html, body, #root {
     min-height: 100%;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 *, *::before, *::after {
@@ -8,17 +13,15 @@ html, body, #root {
 }
 
 body {
-    margin: 0;
     background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.4;
 }
 
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-
 /* REFINEMENT TWEAKS */
     /* Prevents the browser from faking bold or italic
         if the font doesn’t include those weights */
@@ -56,7 +59,7 @@ body {
 
 [data-theme="dark"] {
     --bg-primary: #0b1120;
-    --bg-secondary: #0b1120;
+    --bg-secondary: #111827;
     --text-main: #7fb3ff;
     --text-primary: #e6edf3;
     --text-secondary:#94a3b8;
@@ -64,3 +67,73 @@ body {
     --accent-primary: #a4b8d4;
     --accent-secondary: #7d99c2;
 }
+
+/* START FONT ********************************************** */
+/* HEADINGS */
+h1 {
+    font-family: 'Cormorant Garamond', 'Inter', serif, -apple-system;
+    font-size: clamp(2.6rem, 4vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', 'Inter', serif, -apple-system;
+    font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+    font-weight: 540;
+    line-height: 1.26;
+    letter-spacing: -0.01em;
+
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+}
+
+/* BODY */
+p {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text-primary);
+
+    font-size: clamp(0.94rem, 1vw, 1.2rem);
+    line-height: 1.4;
+}
+
+p .lede {
+    font-weight: 300;
+
+    font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+    line-height: 1.48;
+}
+
+p .muted {
+    color: var(--text-secondary);
+
+    font-size: 0.86rem;
+    line-height: 1.4;
+    }
+/* END FONT ************************************************** */
+
+/* START HYPERLINKS ****************************************** */
+
+/* END HYPERLINKS ******************************************** */
+
+/*************************************************************/
+/*---END GLOBAL CSS------------------------------------------*/
+/*************************************************************/
+
+/* TESTING **** *********************************************** */
+
+/* ===============================
+   MUTED TEXT
+================================= */
+
+.text-muted {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+

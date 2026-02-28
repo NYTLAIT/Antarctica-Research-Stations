@@ -1,3 +1,36 @@
+# ABOUT PROJECT: Antartica Research Stations
+## 
+
+# SITES
+
+
+# ABOUT STRUCTURE:
+## STYLING NOTES:
+- FONT SIZES_260228 12:10AM
+    Element: Font-size | Line-height | Weight | Notes
+    - h1: 2.6–3.6rem | 1.2 | 600 | Titles
+    - h2: 1.8–2.8rem | 1.26 | 540 | Sections
+    - p: 0.94–1.2rem | 1.4 | 400 | Body
+        - p.lede: 1.1–1.4rem | 1.48 | 300 | Important paragraph / intro / highlights
+        - p.muted: 0.86–1rem  | 1.4 | 400 | Subtle info / captions / footers
+
+- TOGGLE 'DEFAULT(LIGHT) | DARK' COLOR THEMES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
