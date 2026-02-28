@@ -1,73 +1,66 @@
-:root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html, body, #root {
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
-
-a:hover {
-    color: #535bf2;
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
     margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+
+/* REFINEMENT TWEAKS */
+    /* Prevents the browser from faking bold or italic
+        if the font doesn’t include those weights */
+    font-synthesis: none;
+    
+    /* Improves text readability by enabling better
+        kerning and ligatures (mainly helpful for longer text) */
+    text-rendering: optimizeLegibility;
+    
+    /* Makes fonts render slightly thinner and smoother
+        in Chrome/Safari (WebKit-based browsers) */
+    -webkit-font-smoothing: antialiased;
+    
+    /* Adjusts font smoothing specifically for Firefox on macOS */
+    -moz-osx-font-smoothing: grayscale;
+
+/* FOR COLOR THEME (DEFAULT: LIGHT) */
+    /* background | big */
+    --bg-primary: #fcfeff;
+    /* controls | smaller */
+    --bg-secondary: #e6f0f7;
+    /* headings | strong */
+    --text-main: #1e3a8a;
+    /* main body | medium */
+    --text-primary: #0f172a;
+    /* muted text | subtle */
+    --text-secondary: #2b3f5c;
+    /* buttons and strong links | strong */
+    --accent-main: #4b789b;
+    /* hover states | medium */
+    --accent-primary: #3a7dce;
+    /* subtle borders and tags | subtle */
+    --accent-secondary: #b9cbda;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-
-button:hover {
-    border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
+[data-theme="dark"] {
+    --bg-primary: #0b1120;
+    --bg-secondary: #0b1120;
+    --text-main: #7fb3ff;
+    --text-primary: #e6edf3;
+    --text-secondary:#94a3b8;
+    --accent-main: #4b789b;
+    --accent-primary: #a4b8d4;
+    --accent-secondary: #7d99c2;
 }
