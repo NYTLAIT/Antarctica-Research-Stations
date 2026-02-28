@@ -20,6 +20,8 @@ implimentation code to further Antarctic Sciences.
 - TOGGLE 'DEFAULT(LIGHT) | DARK' COLOR THEMES (VARIABLE LAYOUT):
 
 ## JSON FILE TEMPLATE:
+
+```json
 [
     {
         "id": "",
@@ -67,10 +69,19 @@ implimentation code to further Antarctic Sciences.
         }
     }
 ]
+```
 
 Notes: 
 - .status: "Active" | "Seasonal" | "Decommissioned" | "Under Construction" | "Abandoned"
-- .external_references[0].type: "official" (operator) | "research_program" (specific scientific project) | "archival" (historical or documented records) | "article" | "blog" | "other"
+- .external_references[0].type: (type, authority, example)
+    - "official" | primary | National Antarctic Program
+    - "research_program" | primary scientific | Ice Core Initiative
+    - "archival" | historical record | National Archives
+    - "journalistic" | media | News feature, Scientific articles
+    - "educational_institutional" | institutional educational | NatGeo Education
+    - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
+    - "data_source" | scientific dataset | Climate database
+
 
 # React + Vite
 
