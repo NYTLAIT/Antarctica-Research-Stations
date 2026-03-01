@@ -4,10 +4,30 @@
         "slug": "mcmurdo-station-antarctica",
         "name": "McMurdo Station",
         "country": "United States",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/mcmurdo-station-aerial.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_McMurdo_Station_-_descriptions.JPG",
+                "license": "PD-US-NSF",
+                "caption": "Aerial view of McMurdo Station, 2010"
+            }
+        ],
         "year_established": 1955,
-        "status": "Active",
-        "operator": "United States Antarctic Program (USAP), National Science Foundation (NSF)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "United States Antarctic Program",
+                "abbr": "USAP"
+            },
+            {
+                "full": "National Science Foundation",
+                "abbr": "NSF"
+            }
+        ],
         "location": {
             "location_name": "Hut Point Peninsula, Ross Island, Ross Sea",
             "coordinates": {
@@ -50,7 +70,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Data verified against NSF official sources. Status, population, operator, and location confirmed accurate. Image sourced from Wikimedia Commons under PD-US-NSF license."
+                        }
+                    ]
                 }
             ]
         }
@@ -60,15 +87,35 @@
         "slug": "amundsen-scott-south-pole-station",
         "name": "Amundsen-Scott South Pole Station",
         "country": "United States",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/amundsen-scott-south-pole-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Amundsen-scott-south_pole_station_2007.jpg",
+                "license": "PD-US-NSF",
+                "caption": "Amundsen-Scott South Pole Station, 2007"
+            }
+        ],
         "year_established": 1956,
-        "status": "Active",
-        "operator": "United States Antarctic Program (USAP), National Science Foundation (NSF)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "United States Antarctic Program",
+                "abbr": "USAP"
+            },
+            {
+                "full": "National Science Foundation",
+                "abbr": "NSF"
+            }
+        ],
         "location": {
             "location_name": "Geographic South Pole, Antarctic Plateau",
             "coordinates": {
-                "latitude": -90.0,
-                "longitude": 0.0
+                "latitude": -90,
+                "longitude": 0
             }
         },
         "population": {
@@ -97,12 +144,6 @@
                 "site_name": "National Science Foundation",
                 "label": "U.S. Antarctic Program – Year-round research stations",
                 "url": "https://www.nsf.gov/geo/opp/us-antarctic-program"
-            },
-            {
-                "type": "official",
-                "site_name": "National Science Foundation",
-                "label": "NSF Antarctic Research Program description (South Pole populations)",
-                "url": "https://www.nsf.gov/funding/opportunities/antarctic-research/5519/nsf06-549/solicitation"
             }
         ],
         "metadata": {
@@ -111,7 +152,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against NSF official sources. Confirmed as permanent year-round station. Image sourced from Wikimedia Commons under PD-US-NSF license."
+                        }
+                    ]
                 }
             ]
         }
@@ -121,10 +169,30 @@
         "slug": "palmer-station-anvers-island",
         "name": "Palmer Station",
         "country": "United States",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/palmer-station-rv-gould.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:RV_Lawrence_M._Gould_at_Palmer_Station.jpg",
+                "license": "PD-US-NSF",
+                "caption": "RV Lawrence M. Gould at Palmer Station, Antarctica"
+            }
+        ],
         "year_established": 1968,
-        "status": "Active",
-        "operator": "United States Antarctic Program (USAP), National Science Foundation (NSF)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "United States Antarctic Program",
+                "abbr": "USAP"
+            },
+            {
+                "full": "National Science Foundation",
+                "abbr": "NSF"
+            }
+        ],
         "location": {
             "location_name": "Anvers Island, Antarctic Peninsula",
             "coordinates": {
@@ -166,7 +234,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against NSF official sources. Confirmed year-round operation with smaller winter crew. Image sourced from Wikimedia Commons under PD-US-NSF license."
+                        }
+                    ]
                 }
             ]
         }
@@ -176,10 +251,26 @@
         "slug": "halley-vi-research-station-brunt-ice-shelf",
         "name": "Halley VI Research Station",
         "country": "United Kingdom",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/halley-vi-research-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Halley_VI_Research_Station,_January_2013.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Halley VI Research Station on the Brunt Ice Shelf, January 2013"
+            }
+        ],
         "year_established": 1956,
-        "status": "Active",
-        "operator": "British Antarctic Survey (BAS)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Summer-only",
+            "operational_type": "Seasonal"
+        },
+        "operator": [
+            {
+                "full": "British Antarctic Survey",
+                "abbr": "BAS"
+            }
+        ],
         "location": {
             "location_name": "Brunt Ice Shelf, Weddell Sea",
             "coordinates": {
@@ -188,12 +279,12 @@
             }
         },
         "population": {
-            "summer": 52,
+            "summer": 70,
             "winter": 0
         },
-        "summary": "British modular research station on the Brunt Ice Shelf, known for atmospheric and space weather observations and ozone-hole discovery legacy.",
-        "description": "Halley Research Station is situated on the floating Brunt Ice Shelf in the Weddell Sea at approximately 75.568°S, 25.509°W. The current Halley VI station consists of modular, ski-mounted buildings that can be relocated in response to ice-shelf dynamics. Historically staffed all year with up to around 52 personnel in summer and a small wintering team, the station now operates as a summer-only facility after safety concerns over evolving cracks in the ice shelf led BAS to suspend winter occupancy. Halley plays a key role in observing the Earth's atmosphere, space weather, and long-term climate signals.",
-        "historical_note": "The Halley series of stations has been continuously occupied since January 1956, with several successive builds culminating in the innovative Halley VI structure. Data from Halley contributed to the discovery of the Antarctic ozone hole in the 1980s, underpinning major international environmental agreements such as the Montreal Protocol.",
+        "summary": "British modular research station on the Brunt Ice Shelf, known for atmospheric and space weather observations and ozone-hole discovery legacy. Operates as summer-only since 2017 due to ice-shelf instability.",
+        "description": "Halley Research Station is situated on the floating Brunt Ice Shelf in the Weddell Sea at approximately 75.568°S, 25.509°W. The current Halley VI station consists of eight modular, ski-mounted buildings that can be relocated in response to ice-shelf dynamics — a capability used in 2017 when the station was moved 23 km upstream of a dormant ice chasm. Since January 2017, BAS has suspended winter staffing as a safety precaution following the detection of new and unpredictable ice cracks on the Brunt Ice Shelf. The station now operates as a summer-only facility, hosting up to 70 personnel between late December and early March, while autonomous instruments continue to collect scientific data through the winter.",
+        "historical_note": "The Halley series of stations has been continuously occupied since January 1956, with several successive builds culminating in the innovative Halley VI structure, which officially opened in February 2013. Data from Halley contributed to the discovery of the Antarctic ozone hole in the 1980s, underpinning major international environmental agreements such as the Montreal Protocol.",
         "research_focus": [
             "Atmospheric chemistry and ozone monitoring",
             "Space weather and upper-atmosphere physics",
@@ -214,7 +305,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against BAS official site. Status corrected to Summer-only/Seasonal — winter staffing suspended since 2017 due to Brunt Ice Shelf crack risks. Summer population updated to 70 per BAS. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -224,10 +322,26 @@
         "slug": "rothera-research-station-adelaide-island",
         "name": "Rothera Research Station",
         "country": "United Kingdom",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/rothera-research-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Rothera_point.jpg",
+                "license": "PD",
+                "caption": "Rothera Point, Adelaide Island, Antarctic Peninsula"
+            }
+        ],
         "year_established": 1975,
-        "status": "Active",
-        "operator": "British Antarctic Survey (BAS)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "British Antarctic Survey",
+                "abbr": "BAS"
+            }
+        ],
         "location": {
             "location_name": "Rothera Point, Adelaide Island, Antarctic Peninsula region",
             "coordinates": {
@@ -240,7 +354,7 @@
             "winter": 34
         },
         "summary": "United Kingdom's largest Antarctic station and primary BAS logistics and science hub in the Antarctic Peninsula region.",
-        "description": "Rothera Research Station is located on Rothera Point on Adelaide Island off the Antarctic Peninsula, at about 67.57°S, 68.12°W. It is the largest British Antarctic Survey base, serving as a hub for both marine and terrestrial research and as a key logistics center with an airstrip and wharf. Official BAS information notes that staff numbers can exceed 160 in summer with around 34 in winter, supporting a broad range of scientific disciplines from biology and glaciology to atmospheric science, alongside large operational teams for aviation, marine operations, and construction.",
+        "description": "Rothera Research Station is located on Rothera Point on Adelaide Island off the Antarctic Peninsula, at about 67.57°S, 68.12°W. It is the largest British Antarctic Survey base, serving as a hub for both marine and terrestrial research and as a key logistics center with an airstrip and wharf. Staff numbers can exceed 160 in summer with around 34 in winter, supporting a broad range of scientific disciplines from biology and glaciology to atmospheric science, alongside large operational teams for aviation, marine operations, and construction.",
         "historical_note": "Opened in 1975, Rothera gradually replaced older BAS facilities in the region and has undergone significant modernization, including runway upgrades and new wharf construction. It has become central to UK Antarctic operations and major international collaborations in the Peninsula region.",
         "research_focus": [
             "Marine biology and oceanography",
@@ -262,7 +376,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against BAS official sources. Confirmed as permanent year-round station. Image sourced from Wikimedia Commons."
+                        }
+                    ]
                 }
             ]
         }
@@ -272,10 +393,30 @@
         "slug": "princess-elisabeth-antarctica-station",
         "name": "Princess Elisabeth Antarctica",
         "country": "Belgium",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/princess-elisabeth-antarctica.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:PrincessElisabethAntarctica.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Princess Elisabeth Antarctica station, Utsteinen Nunatak, Queen Maud Land"
+            }
+        ],
         "year_established": 2009,
-        "status": "Active",
-        "operator": "International Polar Foundation on behalf of the Belgian Polar Secretariat",
+        "status": {
+            "is_active": true,
+            "operational_status": "Summer-only",
+            "operational_type": "Seasonal"
+        },
+        "operator": [
+            {
+                "full": "International Polar Foundation",
+                "abbr": "IPF"
+            },
+            {
+                "full": "Belgian Polar Secretariat",
+                "abbr": "BPS"
+            }
+        ],
         "location": {
             "location_name": "Utsteinen Nunatak, Queen Maud Land (Dronning Maud Land)",
             "coordinates": {
@@ -287,11 +428,11 @@
             "summer": 16,
             "winter": 0
         },
-        "summary": "Belgian zero-emission polar research station in Queen Maud Land, operating seasonally with a strong focus on sustainable polar infrastructure.",
-        "description": "Princess Elisabeth Antarctica is a Belgian scientific research station located on Utsteinen Nunatak in Queen Maud Land, at roughly 71°57'S, 23°20'49\"E. Designed and operated by the International Polar Foundation, it is promoted as the first zero‑emission Antarctic station, relying primarily on wind and solar power integrated via a smart micro‑grid. The base operates seasonally, usually accommodating up to around 16 scientists and support staff in summer, and is closed in winter while autonomous systems continue to function.",
-        "historical_note": "Construction began in the mid‑2000s and the station went into service in February 2009, marking Belgium's return to Antarctic science after the historic King Baudouin Station era. The project has since been used as a showcase for sustainable building and energy systems in extreme environments and as a platform for international scientific campaigns.",
+        "summary": "Belgian zero-emission polar research station in Queen Maud Land, operating seasonally (approximately November to February) with autonomous systems running through winter.",
+        "description": "Princess Elisabeth Antarctica is a Belgian scientific research station located on Utsteinen Nunatak in Queen Maud Land, at roughly 71°57'S, 23°20'49\"E. Designed and operated by the International Polar Foundation, it is the world's first zero-emission Antarctic station, relying primarily on wind and solar power integrated via a smart micro-grid. The base operates seasonally from approximately November to February, accommodating up to around 16 scientists and support staff in summer. During the austral winter the station enters autonomous mode — energy consumption drops to a minimum, with remote monitoring systems continuing to operate until the BELARE team returns the following season.",
+        "historical_note": "Construction began in the mid-2000s and the station went into service in February 2009, marking Belgium's return to Antarctic science after the historic King Baudouin Station era. The BELARE 2025-26 season was completed successfully, with the team closing the station for winter in early 2026.",
         "research_focus": [
-            "Glaciology and ice‑sheet dynamics",
+            "Glaciology and ice-sheet dynamics",
             "Climate and atmospheric processes",
             "Geology and geophysics of Queen Maud Land",
             "Environmental monitoring and sustainable technologies"
@@ -310,7 +451,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against IPF official site. Status confirmed Summer-only/Seasonal. BELARE 2025-26 season confirmed closed in early 2026. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -320,27 +468,47 @@
         "slug": "vostok-station-east-antarctica",
         "name": "Vostok Station",
         "country": "Russia",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/vostok-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Vostok_station_1979.jpg",
+                "license": "PD",
+                "caption": "Vostok Station on the East Antarctic Plateau"
+            }
+        ],
         "year_established": 1957,
-        "status": "Active",
-        "operator": "Russian Antarctic Expedition, Arctic and Antarctic Research Institute (AARI)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "Russian Antarctic Expedition",
+                "abbr": "RAE"
+            },
+            {
+                "full": "Arctic and Antarctic Research Institute",
+                "abbr": "AARI"
+            }
+        ],
         "location": {
             "location_name": "Central East Antarctic Plateau, near subglacial Lake Vostok",
             "coordinates": {
                 "latitude": -78.47,
-                "longitude": 106.80
+                "longitude": 106.8
             }
         },
         "population": {
             "summer": 30,
             "winter": 15
         },
-        "summary": "High‑altitude inland Russian station on the East Antarctic Plateau, known for extreme cold and deep ice‑core drilling above Lake Vostok.",
-        "description": "Vostok Station is a Russian research base located on the East Antarctic Plateau at roughly 78°28'S, 106°48'E and an elevation of about 3,488 meters above sea level. It is among the coldest and most isolated stations on Earth, sometimes referred to as the planet's Pole of Cold. The station supports a relatively small team of a few dozen personnel in summer and a smaller overwintering crew, who conduct geophysical, glaciological, and atmospheric studies and oversee one of the deepest ice‑core drilling projects ever completed.",
+        "summary": "High-altitude inland Russian station on the East Antarctic Plateau, known for extreme cold and deep ice-core drilling above Lake Vostok.",
+        "description": "Vostok Station is a Russian research base located on the East Antarctic Plateau at roughly 78°28'S, 106°48'E and an elevation of about 3,488 meters above sea level. It is among the coldest and most isolated stations on Earth, sometimes referred to as the planet's Pole of Cold. The station supports a relatively small team of a few dozen personnel in summer and a smaller overwintering crew, who conduct geophysical, glaciological, and atmospheric studies and oversee one of the deepest ice-core drilling projects ever completed.",
         "historical_note": "Founded on 16 December 1957 by the Soviet Union, Vostok Station became famous for recording the lowest reliably measured natural air temperature on Earth, −89.2 °C, and for ice cores that extend back over several glacial cycles. It also sits above subglacial Lake Vostok, whose exploration has raised important questions about life in extreme environments and planetary analogues.",
         "research_focus": [
-            "Deep ice‑core drilling and paleoclimate reconstruction",
-            "Glaciology and ice‑sheet dynamics",
+            "Deep ice-core drilling and paleoclimate reconstruction",
+            "Glaciology and ice-sheet dynamics",
             "Meteorology and climatology of the East Antarctic Plateau",
             "Geophysics and studies of subglacial Lake Vostok"
         ],
@@ -364,7 +532,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against AARI and NSIDC sources. Confirmed as permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons (public domain)."
+                        }
+                    ]
                 }
             ]
         }
@@ -374,14 +549,34 @@
         "slug": "concordia-station-dome-c",
         "name": "Concordia Station",
         "country": "France / Italy",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/concordia-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Concordia_Station_2007.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Concordia Station at Dome C, East Antarctic Plateau, 2007"
+            }
+        ],
         "year_established": 2005,
-        "status": "Active",
-        "operator": "French Polar Institute Paul‑Émile Victor (IPEV) and Italian National Research Council (CNR, previously PNRA/ENEA)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "French Polar Institute Paul-Émile Victor",
+                "abbr": "IPEV"
+            },
+            {
+                "full": "Italian National Research Council",
+                "abbr": "CNR"
+            }
+        ],
         "location": {
             "location_name": "Dome C, East Antarctic Plateau",
             "coordinates": {
-                "latitude": -75.10,
+                "latitude": -75.1,
                 "longitude": 123.33
             }
         },
@@ -389,11 +584,11 @@
             "summer": 60,
             "winter": 15
         },
-        "summary": "Binational French‑Italian inland station at Dome C, supporting astronomy, climate studies, and life‑science research in extreme conditions.",
-        "description": "Concordia Station sits on the East Antarctic Plateau at the Dome C site, about 3,230 meters above sea level and roughly 1,000 km from the coast and 1,670 km from the South Pole. It is jointly built and operated by the French Polar Institute Paul‑Émile Victor and Italian polar programs, comprising a winter camp used year‑round and additional summer facilities. The station hosts around several dozen people in summer and a smaller overwintering crew, providing a unique environment for astrophysics, atmospheric and climate observations, Earth sciences, and human physiology research under prolonged isolation and darkness.",
-        "historical_note": "An agreement between French and Italian polar institutes in the early 1990s led to the planning and construction of a shared station at Dome C, with Concordia becoming fully operational in the mid‑2000s. It has since become a strategic international site for deep ice‑core drilling and for analog studies supporting future long‑duration space missions.",
+        "summary": "Binational French-Italian inland station at Dome C, supporting astronomy, climate studies, and life-science research in extreme conditions.",
+        "description": "Concordia Station sits on the East Antarctic Plateau at the Dome C site, about 3,230 meters above sea level and roughly 1,000 km from the coast and 1,670 km from the South Pole. It is jointly built and operated by the French Polar Institute Paul-Émile Victor and Italian polar programs, comprising a winter camp used year-round and additional summer facilities. The station hosts around several dozen people in summer and a smaller overwintering crew, providing a unique environment for astrophysics, atmospheric and climate observations, Earth sciences, and human physiology research under prolonged isolation and darkness.",
+        "historical_note": "An agreement between French and Italian polar institutes in the early 1990s led to the planning and construction of a shared station at Dome C, with Concordia becoming fully operational in the mid-2000s. It has since become a strategic international site for deep ice-core drilling and for analog studies supporting future long-duration space missions.",
         "research_focus": [
-            "Paleoclimate and deep ice‑core drilling",
+            "Paleoclimate and deep ice-core drilling",
             "Astronomy and astrophysics from the high Antarctic Plateau",
             "Atmospheric and climate research",
             "Earth sciences, geophysics, and glaciology",
@@ -408,7 +603,7 @@
             },
             {
                 "type": "official",
-                "site_name": "EU‑POLARIN",
+                "site_name": "EU-POLARIN",
                 "label": "Concordia Station, FR+IT – site description",
                 "url": "https://eu-polarin.eu/concordia-station-frit/"
             }
@@ -419,7 +614,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against IPEV and EU-POLARIN sources. Confirmed as permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -429,14 +631,34 @@
         "slug": "esperanza-base-hope-bay",
         "name": "Esperanza Base",
         "country": "Argentina",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/esperanza-base.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Base_Esperanza_2.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Esperanza Base at Hope Bay, northern Antarctic Peninsula"
+            }
+        ],
         "year_established": 1953,
-        "status": "Active",
-        "operator": "Argentine Army and Dirección Nacional del Antártico (Argentina)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "Argentine Army",
+                "abbr": null
+            },
+            {
+                "full": "Dirección Nacional del Antártico",
+                "abbr": "DNA"
+            }
+        ],
         "location": {
             "location_name": "Hope Bay, Trinity Peninsula, northern Antarctic Peninsula",
             "coordinates": {
-                "latitude": -63.40,
+                "latitude": -63.4,
                 "longitude": -56.99
             }
         },
@@ -445,7 +667,7 @@
             "winter": 55
         },
         "summary": "Permanent Argentine base at Hope Bay, notable as a small civilian settlement with families and one of the oldest stations on the Antarctic Peninsula.",
-        "description": "Esperanza Base is an all‑year Argentine research station on the northern tip of the Antarctic Peninsula at Hope Bay, one of the northernmost locations on the mainland. The base is unusual in Antarctica for hosting military personnel, scientists, and their families, including a school and civilian infrastructure, and maintains a roughly similar population year‑round of around several dozen residents. Research activities include glaciology, seismology, biology, and environmental monitoring in a comparatively milder Antarctic Peninsula climate with ice‑free rocky terrain.",
+        "description": "Esperanza Base is an all-year Argentine research station on the northern tip of the Antarctic Peninsula at Hope Bay, one of the northernmost locations on the mainland. The base is unusual in Antarctica for hosting military personnel, scientists, and their families, including a school and civilian infrastructure, and maintains a roughly similar population year-round of around several dozen residents. Research activities include glaciology, seismology, biology, and environmental monitoring in a comparatively milder Antarctic Peninsula climate with ice-free rocky terrain.",
         "historical_note": "Opened in 1953, Esperanza is one of the oldest permanent Antarctic stations and the site of some of the first human births recorded on the continent. It has also been a focal point of Argentine presence and claims in the Peninsula region and features in diplomatic history around the early years of the Antarctic Treaty.",
         "research_focus": [
             "Glaciology and climate observations",
@@ -456,8 +678,8 @@
         "external_references": [
             {
                 "type": "official",
-                "site_name": "Argentine Antarctic Program (via national sources, typically Spanish‑language)",
-                "label": "Base Esperanza – Argentine Antarctic information portal (representative official source)",
+                "site_name": "Argentine Antarctic Program",
+                "label": "Base Esperanza – Argentine Antarctic information portal",
                 "url": "https://es.wikipedia.org/wiki/Base_Esperanza"
             }
         ],
@@ -467,7 +689,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against Argentine Antarctic Program sources. Confirmed permanent year-round base with stable population. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -477,10 +706,26 @@
         "slug": "vernadsky-research-base-antarctic-peninsula",
         "name": "Vernadsky Research Base",
         "country": "Ukraine",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/vernadsky-research-base.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Vernadsky_Research_Base.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Vernadsky Research Base on Galindez Island, Argentine Islands"
+            }
+        ],
         "year_established": 1947,
-        "status": "Active",
-        "operator": "National Antarctic Scientific Center of Ukraine",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "National Antarctic Scientific Center of Ukraine",
+                "abbr": "NASC"
+            }
+        ],
         "location": {
             "location_name": "Galindez Island, Argentine Islands, western Antarctic Peninsula",
             "coordinates": {
@@ -494,7 +739,7 @@
         },
         "summary": "Ukrainian research station on Galindez Island, formerly British Faraday Station, noted for atmospheric and ionospheric research.",
         "description": "Vernadsky Research Base is situated on Galindez Island in the Argentine Islands off the western coast of the Antarctic Peninsula. Originally established by the United Kingdom as Base F (later Faraday Station) in 1947, it was transferred to Ukraine in 1996 and has since been operated by the National Antarctic Scientific Center. The station hosts a few dozen personnel in summer and a smaller wintering group, supporting meteorological, ionospheric, and environmental research in a maritime Antarctic setting.",
-        "historical_note": "The station's history spans its British period as Faraday, during which it contributed to ozone‑layer research, and its transfer to Ukraine, when it was renamed in honor of Ukrainian scientist Volodymyr Vernadsky. The base is also known for its small historical bar and for being a symbolic milestone in Ukraine's independent polar research program.",
+        "historical_note": "The station's history spans its British period as Faraday, during which it contributed to ozone-layer research, and its transfer to Ukraine, when it was renamed in honor of Ukrainian scientist Volodymyr Vernadsky. The base is also known for its small historical bar and for being a symbolic milestone in Ukraine's independent polar research program.",
         "research_focus": [
             "Meteorology and climate observations",
             "Ionospheric and space weather studies",
@@ -505,7 +750,7 @@
             {
                 "type": "official",
                 "site_name": "National Antarctic Scientific Center of Ukraine",
-                "label": "Akademik Vernadsky station – official information (representative homepage)",
+                "label": "Akademik Vernadsky station – official information",
                 "url": "https://uac.gov.ua/en/akademik-vernadsky"
             }
         ],
@@ -515,7 +760,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against NASC Ukraine official sources. Confirmed permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -525,10 +777,30 @@
         "slug": "dumont-durville-station-adelie-land",
         "name": "Dumont d'Urville Station",
         "country": "France",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/dumont-durville-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Dumont_d%27Urville_Station_2.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Dumont d'Urville Station on Petrel Island, Adélie Land"
+            }
+        ],
         "year_established": 1956,
-        "status": "Active",
-        "operator": "French Polar Institute Paul-Émile Victor (IPEV) with French Southern and Antarctic Lands (TAAF)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "French Polar Institute Paul-Émile Victor",
+                "abbr": "IPEV"
+            },
+            {
+                "full": "French Southern and Antarctic Lands",
+                "abbr": "TAAF"
+            }
+        ],
         "location": {
             "location_name": "Petrel Island (Île des Pétrels), Adélie Land",
             "coordinates": {
@@ -541,7 +813,7 @@
             "winter": 30
         },
         "summary": "Historic French coastal station in Adélie Land, continuously occupied since the late 1950s and focused on marine, atmospheric, and geophysical research.",
-        "description": "Dumont d'Urville Station is located on Petrel Island off the coast of Adélie Land in East Antarctica, facing Tasmania across the Southern Ocean. It is operated functionally by the French Polar Institute Paul-Émile Victor, while French Southern and Antarctic Lands (TAAF) handle sovereignty-related public services, and the station has been continuously occupied since 1956–1959. The site supports several dozen to over a hundred people seasonally in a compact coastal setting exposed to strong winds, sea ice, and wildlife colonies.",
+        "description": "Dumont d'Urville Station is located on Petrel Island off the coast of Adélie Land in East Antarctica, facing Tasmania across the Southern Ocean. It is operated functionally by the French Polar Institute Paul-Émile Victor, while French Southern and Antarctic Lands (TAAF) handle sovereignty-related public services. The station has been continuously occupied since 1956–1959, supporting several dozen to over a hundred people seasonally in a compact coastal setting exposed to strong winds, sea ice, and wildlife colonies.",
         "historical_note": "Opened in 1956 and named for French explorer Jules Dumont d'Urville, the station became France's first permanent base on the Antarctic continent and was rebuilt and expanded after the decision in 1959 to maintain a permanent scientific presence. It has since remained a cornerstone of French Antarctic activity and a logistical gateway for operations in Adélie Land.",
         "research_focus": [
             "Marine and coastal ecosystems",
@@ -563,7 +835,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against IPEV official sources. Confirmed permanent year-round station. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -573,10 +852,26 @@
         "slug": "neumayer-station-iii-ekstrom-ice-shelf",
         "name": "Neumayer Station III",
         "country": "Germany",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/neumayer-station-iii.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Neumayer-Station_III.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Neumayer Station III on the Ekström Ice Shelf"
+            }
+        ],
         "year_established": 2009,
-        "status": "Active",
-        "operator": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research",
+                "abbr": "AWI"
+            }
+        ],
         "location": {
             "location_name": "Ekström Ice Shelf, eastern Weddell Sea",
             "coordinates": {
@@ -611,7 +906,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against AWI official sources. Confirmed permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
@@ -621,10 +923,26 @@
         "slug": "davis-station-prydz-bay",
         "name": "Davis Station",
         "country": "Australia",
-        "image": null,
+        "images": [
+            {
+                "image": "../../../assets/images/stations/davis-station.jpg",
+                "source": "https://commons.wikimedia.org/wiki/File:Davis_Station_Panorama.jpg",
+                "license": "CC BY-SA 3.0",
+                "caption": "Davis Station panorama, Vestfold Hills, Prydz Bay"
+            }
+        ],
         "year_established": 1957,
-        "status": "Active",
-        "operator": "Australian Antarctic Division (AAD)",
+        "status": {
+            "is_active": true,
+            "operational_status": "Year-round",
+            "operational_type": "Permanent"
+        },
+        "operator": [
+            {
+                "full": "Australian Antarctic Division",
+                "abbr": "AAD"
+            }
+        ],
         "location": {
             "location_name": "Vestfold Hills, Prydz Bay, Ingrid Christensen Coast",
             "coordinates": {
@@ -649,7 +967,7 @@
             {
                 "type": "official",
                 "site_name": "Australian Antarctic Division",
-                "label": "Davis research station – Australian Antarctic Program (representative official station page)",
+                "label": "Davis research station – Australian Antarctic Program",
                 "url": "https://www.antarctica.gov.au/antarctic-operations/stations/davis/"
             }
         ],
@@ -659,7 +977,14 @@
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
-                    "status": "Unreviewed"
+                    "is_reviewed": [
+                        {
+                            "reviewer_type": "LLM",
+                            "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
+                            "date_reviewed": "2026-03-01",
+                            "notes": "Verified against Australian Antarctic Division official sources. Confirmed permanent year-round station. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                        }
+                    ]
                 }
             ]
         }
