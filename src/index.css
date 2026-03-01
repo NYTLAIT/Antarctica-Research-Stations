@@ -40,22 +40,26 @@ body {
 
 /* FOR COLOR THEME (DEFAULT: LIGHT) */
     /* background | big */
-    --bg-primary: #fcfeff;
+    --bg-primary: #e8f0f6;
     /* controls | smaller */
-    --bg-secondary: #e6f0f7;
+    --bg-secondary: #fcfeff;
     /* headings | strong */
     --text-main: #1e3a8a;
     /* main body | medium */
-    --text-primary: #0f172a;
+    --text-primary: #2b3f5c;
     /* muted text | subtle */
-    --text-secondary: #2b3f5c;
+    --text-secondary: #bbb4c2;
     /* buttons and strong links | strong */
     --accent-main: #4b789b;
+    --accent-main-rgb: 75, 120, 155;
     /* hover states | medium */
     --accent-primary: #3a7dce;
+    --accent-primary-rgb: 58, 125, 206;
     /* subtle borders and tags | subtle */
     --accent-secondary: #b9cbda;
+    --accent-secondary-rgb: 185, 203, 218;
 }
+/* A little bluer than --bg-secondary: #fcfeff */
 
 [data-theme="dark"] {
     --bg-primary: #0b1120;
@@ -64,9 +68,13 @@ body {
     --text-primary: #e6edf3;
     --text-secondary:#94a3b8;
     --accent-main: #4b789b;
+    --accent-main-rgb: 75, 120, 155;
     --accent-primary: #a4b8d4;
+    --accent-primary-rgb: 164, 184, 212;
     --accent-secondary: #7d99c2;
+    --accent-secondary-rgb: 125, 153, 194;
 }
+/* more muted for text secondaru: #2b3f5c */
 
 /* START FONT ********************************************** */
 /* HEADINGS */
@@ -78,7 +86,7 @@ h1 {
     letter-spacing: -0.02em;
 
     color: var(--text-main);
-    margin-bottom: 0.4rem 0;
+    margin-bottom: 0.4rem;
     padding: 0;
 }
 

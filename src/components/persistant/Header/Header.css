@@ -45,5 +45,5 @@
 }
 
 .Header .nav-link-active {
-    text-decoration: underline white clamp(2px, 0.4vw, 4px);
+    text-decoration: underline var(--accent-primary) clamp(1px, 0.3vw, 2px);
 }

@@ -1,5 +1,5 @@
 import './StationCard.css'
-import imagePlaceHolder from '../../../assets/images/layout/hero/AirShotSouthPoleStation_NOAAObservatory.jpg'
+import imagePlaceHolder from '../../../assets/images/stations/defaultImage_PalmerStation_MountFrancais.jpg'
 
 function StationCard(
     {id, name, country, images, year_established, status, operators, location, summary}
@@ -16,20 +16,24 @@ function StationCard(
 
     return (
         <div className='StationCard'>
-            <img className='station-img' src={img} alt={`image of ${name}`} />
+            <img className='station-image' src={img} alt={`image of ${name}`} />
 
-            <h2 className='station-title'>{name}</h2>
-            <p className='station-country lede'>{country}</p>
+            <div className="station-card-info">
+                <div className="station-card-identifier">
+                    <h2 className='station-card-title'>{name}</h2>
+                    <p className='station-card-country lede'>{country}</p>
+                </div>
 
-            <p className='station-summary'>{summary}</p>
+                <p className='station-card-summary'>{summary}</p>
 
-            <div className='station-operation-status'>
-                <p className='station-operator'>{`Operated by: ${operatorString}`}</p>
-                <p
-                    className={`station-activity ${stationIsActive ? 'active' : 'inactive'}`}>
-                    {stationIsActive ? 'Active' : 'Inactive'}
-                </p>
-            </div>
+                <div className='station-card-operation-status'>
+                    <p className='station-card-operator'>{`Operated by: ${operatorString}`}</p>
+                    <p
+                        className={`station-card-activity ${stationIsActive ? 'active' : 'inactive'}`}>
+                        {stationIsActive ? 'Active' : 'Inactive'}
+                    </p>
+                </div>
+            </div> 
         </div>
     )
 }

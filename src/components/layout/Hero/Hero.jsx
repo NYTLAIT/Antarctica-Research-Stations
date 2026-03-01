@@ -2,7 +2,7 @@ import './Hero.css'
 import defaultHero from '../../../assets/images/layout/hero/AirShotSouthPoleStation_NOAAObservatory.jpg'
 
 function Hero({heroImg = defaultHero}) {
-    const heroBg = `linear-gradient(to right, var(--bg-primary), transparent), url('${heroImg}')`
+    const heroBg = `linear-gradient(to right, var(--bg-primary), transparent), url(${heroImg})`
     return (
         <div 
             className='Hero'
