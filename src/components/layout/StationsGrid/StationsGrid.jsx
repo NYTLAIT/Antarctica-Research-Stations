@@ -1,5 +1,5 @@
 import './StationsGrid.css'
-import data from '../../data/stations.json'
+import data from '../../../stations.json'
 import StationCard from '../../ui/StationCard/StationCard'
 
 // year established and location included for filter -- year established impltimented nowm location for later

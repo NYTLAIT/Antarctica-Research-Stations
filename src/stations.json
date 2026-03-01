@@ -18,7 +18,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "United States Antarctic Program",
                 "abbr": "USAP"
@@ -101,7 +101,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "United States Antarctic Program",
                 "abbr": "USAP"
@@ -183,7 +183,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "United States Antarctic Program",
                 "abbr": "USAP"
@@ -265,7 +265,7 @@
             "operational_status": "Summer-only",
             "operational_type": "Seasonal"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "British Antarctic Survey",
                 "abbr": "BAS"
@@ -336,7 +336,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "British Antarctic Survey",
                 "abbr": "BAS"
@@ -407,7 +407,7 @@
             "operational_status": "Summer-only",
             "operational_type": "Seasonal"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "International Polar Foundation",
                 "abbr": "IPF"
@@ -482,7 +482,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "Russian Antarctic Expedition",
                 "abbr": "RAE"
@@ -563,7 +563,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "French Polar Institute Paul-Émile Victor",
                 "abbr": "IPEV"
@@ -645,7 +645,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "Argentine Army",
                 "abbr": null
@@ -720,7 +720,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "National Antarctic Scientific Center of Ukraine",
                 "abbr": "NASC"
@@ -791,7 +791,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "French Polar Institute Paul-Émile Victor",
                 "abbr": "IPEV"
@@ -866,7 +866,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research",
                 "abbr": "AWI"
@@ -937,7 +937,7 @@
             "operational_status": "Year-round",
             "operational_type": "Permanent"
         },
-        "operator": [
+        "operators": [
             {
                 "full": "Australian Antarctic Division",
                 "abbr": "AAD"
