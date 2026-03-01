@@ -71,8 +71,20 @@ implimentation code to further Antarctic Sciences.
 ```
 
 Notes: 
-- .status: "Active" | "Seasonal" | "Decommissioned" | "Under Construction" | "Abandoned"
-<<<<<<< HEAD
+- .status:
+    - .status.is_active:
+        - true
+        - false
+    - .status.operational_status:
+        - "planned" | Station approved/proposed
+        - "under construction" | Actively being built; not operational
+        - "operational" | Built and actively functioning
+        - "decommissioned" | Formally closed by governing authority; operations permanently ceased
+        - "abandoned" | Informally or historically deserted
+    - .status.operational_type: (only apply when "operational", else null)
+        - "year-Round"
+        - "seasonal"
+        - null
 - .external_references[0].type: (type, authority, example)
     - "official" | primary | National Antarctic Program
     - "research_program" | primary scientific | Ice Core Initiative
