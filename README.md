@@ -118,10 +118,6 @@ stations.json file NOTES:
             - date_reviewed: ( str (YYYY-MM-DD) | Date the review was completed)
             - notes: (Verification notes and comments)
 
-date_reviewed | string (YYYY-MM-DD) | Date the review was completed
-
-notes | string | Verification notes or comments
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
