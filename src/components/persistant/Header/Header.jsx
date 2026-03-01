@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className='Header'>
             <NavLink className='logo' to="/">
-                WHITEDESERT
+                REDSUNDER
             </NavLink>
             <div className='navbar'>
                 <NavLink
@@ -13,7 +13,7 @@ function Header() {
                     to="/">
                     Explorer</NavLink>
 
-                {/* <NavLink
+                {/* <NavLink    
                     className={({ isActive }) => `nav-link${isActive ? ' nav-link-active' : ''}`}
                     to="/map">
                         Map</NavLink> */}
@@ -22,7 +22,6 @@ function Header() {
                     className={({ isActive }) => `nav-link${isActive ? ' nav-link-active' : ''}`}
                     to="/about">
                         About</NavLink>
-                
             </div>
         </header>
     )

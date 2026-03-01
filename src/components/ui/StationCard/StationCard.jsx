@@ -1,18 +1,23 @@
 import './StationCard.css'
 import imagePlaceHolder from '../../../assets/images/layout/hero/AirShotSouthPoleStation_NOAAObservatory.jpg'
+import data from '../../../stations.json'
 
-function StationCard() {
+function StationCard(
+    {id, name, country, image, year_established, status, operator, location, summary}
+) {
     return (
         <div className='StationCard'>
-            <img src={{imagePlaceHolder}}/>
-
-            <div className="stationcard-info">
-                <h3>Title</h3>
-                <p className="stationcard-country">Country</p>
-                <p className="stationcard-yearestablished">MM-DD-YYYY</p>
+            <img className='stationcard-img' src={image} alt={`image of ${name}`} />
+            <h1 className="stationcard-title">{name}</h1>
+            <div>
+                <p className="stationcard-country lede">{country}</p>
+                <p className="stationcard-country lede">{country}</p>
             </div>
+            
+            
+            
         </div>
-    ) 
+    )
 }
 
 export default StationCard
