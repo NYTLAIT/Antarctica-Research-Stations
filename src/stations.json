@@ -15,8 +15,8 @@
         "year_established": 1955,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -98,8 +98,8 @@
         "year_established": 1956,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -180,8 +180,8 @@
         "year_established": 1968,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -262,8 +262,8 @@
         "year_established": 1956,
         "status": {
             "is_active": true,
-            "operational_status": "Summer-only",
-            "operational_type": "Seasonal"
+            "operational_status": "operational",
+            "operational_type": "seasonal"
         },
         "operators": [
             {
@@ -310,7 +310,7 @@
                             "reviewer_type": "LLM",
                             "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
                             "date_reviewed": "2026-03-01",
-                            "notes": "Verified against BAS official site. Status corrected to Summer-only/Seasonal — winter staffing suspended since 2017 due to Brunt Ice Shelf crack risks. Summer population updated to 70 per BAS. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                            "notes": "Verified against BAS official site. Status corrected to operational/seasonal — winter staffing suspended since 2017 due to Brunt Ice Shelf crack risks. Summer population updated to 70 per BAS. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
                 }
@@ -333,8 +333,8 @@
         "year_established": 1975,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -404,8 +404,8 @@
         "year_established": 2009,
         "status": {
             "is_active": true,
-            "operational_status": "Summer-only",
-            "operational_type": "Seasonal"
+            "operational_status": "operational",
+            "operational_type": "seasonal"
         },
         "operators": [
             {
@@ -456,7 +456,7 @@
                             "reviewer_type": "LLM",
                             "reviewer": "Claude (Anthropic, claude-sonnet-4-6)",
                             "date_reviewed": "2026-03-01",
-                            "notes": "Verified against IPF official site. Status confirmed Summer-only/Seasonal. BELARE 2025-26 season confirmed closed in early 2026. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
+                            "notes": "Verified against IPF official site. Status confirmed operational/seasonal. BELARE 2025-26 season confirmed closed in early 2026. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
                 }
@@ -479,8 +479,8 @@
         "year_established": 1957,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -560,8 +560,8 @@
         "year_established": 2005,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -642,8 +642,8 @@
         "year_established": 1953,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -717,8 +717,8 @@
         "year_established": 1947,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -788,8 +788,8 @@
         "year_established": 1956,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -863,8 +863,8 @@
         "year_established": 2009,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {
@@ -934,8 +934,8 @@
         "year_established": 1957,
         "status": {
             "is_active": true,
-            "operational_status": "Year-round",
-            "operational_type": "Permanent"
+            "operational_status": "operational",
+            "operational_type": "year-round"
         },
         "operators": [
             {

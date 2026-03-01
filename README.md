@@ -30,8 +30,17 @@ implimentation code to further Antarctic Sciences.
         "country": "",
         "year_established": null,
 
-        "status": "Active",
-        "operator": "",
+        "status": {
+            "is_active": null,
+            "operational_status": "",
+            "operational_type": ""
+        },
+        "operators": [
+            {
+                "full": "",
+                "abbr": ""
+            },
+        ],
 
         "location": {
             "location_name": "",
@@ -45,8 +54,6 @@ implimentation code to further Antarctic Sciences.
             "winter": null
         },
 
-        
-
         "summary": "",
         "description": "",
         "historical_note": "",
@@ -54,7 +61,7 @@ implimentation code to further Antarctic Sciences.
 
         "external_references": [
             {
-                "type": "official",
+                "type": "",
                 "site_name": "",
                 "label": "",
                 "url": ""
@@ -64,13 +71,20 @@ implimentation code to further Antarctic Sciences.
         "metadata": {
             "data_last_updated": "",
             "data_author_name": "",
-            "review_status": "Unreviewed"
+            "review_status": [
+                        {
+                            "reviewer_type": "",
+                            "reviewer": "",
+                            "date_reviewed": "YYYY-MM-DD",
+                            "notes": ""
+                        }
+                    ]
         }
     }
 ]
 ```
 
-Notes: 
+stations.json file NOTES:
 - .status:
     - .status.is_active:
         - true
@@ -82,8 +96,8 @@ Notes:
         - "decommissioned" | Formally closed by governing authority; operations permanently ceased
         - "abandoned" | Informally or historically deserted
     - .status.operational_type: (only apply when "operational", else null)
-        - "year-Round"
-        - "seasonal"
+        - "year-round"
+        - "seasonal" | typically active in summer and inactive in winter
         - null
 - .external_references[0].type: (type, authority, example)
     - "official" | primary | National Antarctic Program
@@ -93,6 +107,20 @@ Notes:
     - "educational_institutional" | institutional educational | NatGeo Education
     - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
     - "data_source" | scientific dataset | Climate database
+- .metadata:
+    - .metadata.data_last_updated: (str (YYYY-MM-DD) | Most recent update date)
+    - .metadata.update_log[]:
+        - update_author: (Name of person or system updating record)
+        - update_date: (str (YYYY-MM-DD) | Date update was performed)
+        - is_reviewed[]: (null if unreviewed)
+            - reviewer_type: (Reviewer type (e.g. LLM/AI, community/unofficial, expert/official))
+            - reviewer: Name/identifier of reviewer
+            - date_reviewed: ( str (YYYY-MM-DD) | Date the review was completed)
+            - notes: (Verification notes and comments)
+
+date_reviewed | string (YYYY-MM-DD) | Date the review was completed
+
+notes | string | Verification notes or comments
 
 # React + Vite
 
