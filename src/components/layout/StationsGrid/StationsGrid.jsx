@@ -9,15 +9,13 @@ function StationsGrid() {
       id,
       name,
       country,
-      image,
+      images,
       year_established,
       status,
-      operator,
+      operators,
       location,
       summary
     } = station_info
-
-    const location_name = location.location_name
 
     return (
       <StationCard
@@ -25,10 +23,10 @@ function StationsGrid() {
         id={id}
         name={name}
         country={country}
-        image={image}
+        images={images}
         year_established={year_established}
         status={status}
-        operator={operator}
+        operators={operators}
         location={location}
         summary={summary}
       />
