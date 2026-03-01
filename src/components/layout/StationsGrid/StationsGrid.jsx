@@ -36,5 +36,4 @@ function StationsGrid() {
   return <div className="StationsGrid">{station_infos}</div>
 }
 
-
 export default StationsGrid

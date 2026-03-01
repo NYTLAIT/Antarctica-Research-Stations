@@ -11,7 +11,9 @@ function App() {
         <div className='App'>
             <Header />
             <Hero />
-            <StationsGrid />
+            <div className="explorer">
+                <StationsGrid />
+            </div>
             <Footer />
         </div>
     )
