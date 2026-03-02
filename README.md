@@ -57,7 +57,12 @@ implimentation code to further Antarctic Sciences.
         "summary": "",
         "description": "",
         "historical_note": "",
-        "research_focus": [],
+        "research_focus": [
+            {
+                "desc": "",
+                "tag": ""
+            }
+        ],
 
         "external_references": [
             {
@@ -95,9 +100,9 @@ stations.json file NOTES:
         - "operational" | Built and actively functioning
         - "decommissioned" | Formally closed by governing authority; operations permanently ceased
         - "abandoned" | Informally or historically deserted
-    - .status.operational_type: (only apply when "operational", else null)
+    - .status.operational_type: (only apply when "operational", else null | aligned with the Council of Managers of National Antarctic Programs' (COMNAP) official definition) 
         - "year-round"
-        - "seasonal" | typically active in summer and inactive in winter
+        - "seasonal"
         - null
 - .external_references[0].type: (type, authority, example)
     - "official" | primary | National Antarctic Program
