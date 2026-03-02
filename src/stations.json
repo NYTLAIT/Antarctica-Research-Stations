@@ -32,6 +32,8 @@
         ],
         "location": {
             "location_name": "Hut Point Peninsula, Ross Island, Ross Sea",
+            "zone": "west-antarctica",
+            "region": "ross-sea",
             "coordinates": {
                 "latitude": -77.88,
                 "longitude": 166.67
@@ -85,11 +87,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -98,6 +101,12 @@
                             "notes": "Data verified against NSF official sources. Status, population, operator, and location confirmed accurate. Image sourced from Wikimedia Commons under PD-US-NSF license."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('west-antarctica') and region ('ross-sea') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -135,6 +144,8 @@
         ],
         "location": {
             "location_name": "Geographic South Pole, Antarctic Plateau",
+            "zone": "east-antarctica",
+            "region": "south-pole",
             "coordinates": {
                 "latitude": -90,
                 "longitude": 0
@@ -184,11 +195,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -197,6 +209,12 @@
                             "notes": "Verified against NSF official sources. Confirmed as permanent year-round station. Image sourced from Wikimedia Commons under PD-US-NSF license."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('south-pole') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -234,6 +252,8 @@
         ],
         "location": {
             "location_name": "Anvers Island, Antarctic Peninsula",
+            "zone": "antarctic-peninsula",
+            "region": "anvers-island",
             "coordinates": {
                 "latitude": -64.7743,
                 "longitude": -64.0529
@@ -283,11 +303,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -296,6 +317,12 @@
                             "notes": "Verified against NSF official sources. Confirmed year-round operation with smaller winter crew. Image sourced from Wikimedia Commons under PD-US-NSF license."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('antarctic-peninsula') and region ('anvers-island') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -329,6 +356,8 @@
         ],
         "location": {
             "location_name": "Brunt Ice Shelf, Weddell Sea",
+            "zone": "east-antarctica",
+            "region": "weddell-sea",
             "coordinates": {
                 "latitude": -75.56821,
                 "longitude": -25.50852
@@ -368,11 +397,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -381,6 +411,12 @@
                             "notes": "Verified against BAS official site. Status corrected to operational/seasonal — winter staffing suspended since 2017 due to Brunt Ice Shelf crack risks. Summer population updated to 70 per BAS. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('weddell-sea') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -414,6 +450,8 @@
         ],
         "location": {
             "location_name": "Rothera Point, Adelaide Island, Antarctic Peninsula region",
+            "zone": "antarctic-peninsula",
+            "region": "adelaide-island",
             "coordinates": {
                 "latitude": -67.568889,
                 "longitude": -68.1248
@@ -453,11 +491,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -466,6 +505,12 @@
                             "notes": "Verified against BAS official sources. Confirmed as permanent year-round station. Image sourced from Wikimedia Commons."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('antarctic-peninsula') and region ('adelaide-island') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -503,6 +548,8 @@
         ],
         "location": {
             "location_name": "Utsteinen Nunatak, Queen Maud Land (Dronning Maud Land)",
+            "zone": "east-antarctica",
+            "region": "queen-maud-land",
             "coordinates": {
                 "latitude": -71.949944,
                 "longitude": 23.347079
@@ -542,11 +589,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -555,6 +603,12 @@
                             "notes": "Verified against IPF official site. Status confirmed operational/seasonal. BELARE 2025-26 season confirmed closed in early 2026. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('queen-maud-land') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -592,6 +646,8 @@
         ],
         "location": {
             "location_name": "Central East Antarctic Plateau, near subglacial Lake Vostok",
+            "zone": "east-antarctica",
+            "region": "east-antarctic-plateau",
             "coordinates": {
                 "latitude": -78.47,
                 "longitude": 106.8
@@ -637,11 +693,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -650,6 +707,12 @@
                             "notes": "Verified against AARI and NSIDC sources. Confirmed as permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons (public domain)."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('east-antarctic-plateau') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -688,6 +751,8 @@
         ],
         "location": {
             "location_name": "Dome C, East Antarctic Plateau",
+            "zone": "east-antarctica",
+            "region": "east-antarctic-plateau",
             "coordinates": {
                 "latitude": -75.1,
                 "longitude": 123.33
@@ -737,11 +802,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -750,6 +816,12 @@
                             "notes": "Verified against IPEV and EU-POLARIN sources. Confirmed as permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('east-antarctic-plateau') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -787,6 +859,8 @@
         ],
         "location": {
             "location_name": "Hope Bay, Trinity Peninsula, northern Antarctic Peninsula",
+            "zone": "antarctic-peninsula",
+            "region": "trinity-peninsula",
             "coordinates": {
                 "latitude": -63.4,
                 "longitude": -56.99
@@ -826,11 +900,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -839,6 +914,12 @@
                             "notes": "Verified against Argentine Antarctic Program sources. Confirmed permanent year-round base with stable population. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('antarctic-peninsula') and region ('trinity-peninsula') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -872,6 +953,8 @@
         ],
         "location": {
             "location_name": "Galindez Island, Argentine Islands, western Antarctic Peninsula",
+            "zone": "antarctic-peninsula",
+            "region": "argentine-islands",
             "coordinates": {
                 "latitude": -65.25,
                 "longitude": -64.27
@@ -911,11 +994,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -924,6 +1008,12 @@
                             "notes": "Verified against NASC Ukraine official sources. Confirmed permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('antarctic-peninsula') and region ('argentine-islands') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -961,6 +1051,8 @@
         ],
         "location": {
             "location_name": "Petrel Island (Île des Pétrels), Adélie Land",
+            "zone": "east-antarctica",
+            "region": "adelie-land",
             "coordinates": {
                 "latitude": -66.67,
                 "longitude": 140.01
@@ -1000,11 +1092,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -1013,6 +1106,12 @@
                             "notes": "Verified against IPEV official sources. Confirmed permanent year-round station. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('adelie-land') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -1046,6 +1145,8 @@
         ],
         "location": {
             "location_name": "Ekström Ice Shelf, eastern Weddell Sea",
+            "zone": "east-antarctica",
+            "region": "weddell-sea",
             "coordinates": {
                 "latitude": -70.67,
                 "longitude": -8.27
@@ -1085,11 +1186,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -1098,6 +1200,12 @@
                             "notes": "Verified against AWI official sources. Confirmed permanent year-round station with overwintering crew. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('weddell-sea') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }
@@ -1131,6 +1239,8 @@
         ],
         "location": {
             "location_name": "Vestfold Hills, Prydz Bay, Ingrid Christensen Coast",
+            "zone": "east-antarctica",
+            "region": "prydz-bay",
             "coordinates": {
                 "latitude": -68.58,
                 "longitude": 77.97
@@ -1170,11 +1280,12 @@
             }
         ],
         "metadata": {
-            "data_last_updated": "2026-02-28",
+            "data_last_updated": "2026-03-01",
             "update_log": [
                 {
                     "update_author": "Perplexity (GPT-5.1)",
                     "update_date": "2026-02-28",
+                    "notes": null,
                     "is_reviewed": [
                         {
                             "reviewer_type": "LLM",
@@ -1183,6 +1294,12 @@
                             "notes": "Verified against Australian Antarctic Division official sources. Confirmed permanent year-round station. Image sourced from Wikimedia Commons under CC BY-SA 3.0."
                         }
                     ]
+                },
+                {
+                    "update_author": "Claude (Anthropic, claude-sonnet-4-6)",
+                    "update_date": "2026-03-01",
+                    "notes": "Added zone ('east-antarctica') and region ('prydz-bay') to location object for filter support.",
+                    "is_reviewed": []
                 }
             ]
         }

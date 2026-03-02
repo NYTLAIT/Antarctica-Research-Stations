@@ -34,6 +34,8 @@ function SearchFilter({stations}) {
         })
     })
 
+    
+
     const winterPopulations = stations.map(station => station.population.winter);
     const summerPopulations = stations.map(station => station.population.summer);
     const winterMin = Math.min(...winterPopulations);

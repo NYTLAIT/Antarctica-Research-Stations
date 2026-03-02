@@ -27,7 +27,15 @@ implimentation code to further Antarctic Sciences.
         "slug": "",
 
         "name": "",
-        "country": "",
+        "country": [],
+        "images": [
+            {
+                "image": "",
+                "source": "",
+                "license": "",
+                "caption": ""
+            }
+        ],
         "year_established": null,
 
         "status": {
@@ -43,6 +51,8 @@ implimentation code to further Antarctic Sciences.
         ],
 
         "location": {
+            "zone": "",
+            "region": "",
             "location_name": "",
             "coordinates": {
                 "latitude": null,
@@ -74,8 +84,9 @@ implimentation code to further Antarctic Sciences.
         ],
 
         "metadata": {
-            "data_last_updated": "",
+            "data_last_updated": "YYYY-MM-DD",
             "data_author_name": "",
+            "notes": "",
             "review_status": [
                         {
                             "reviewer_type": "",
@@ -89,7 +100,17 @@ implimentation code to further Antarctic Sciences.
 ]
 ```
 
-stations.json file NOTES:
+stations.json file SCHEMA REFERENCE:
+- .id: unique station identifier (kebab-case string) | used for key
+- .slug: URL-safe identifier (kebab-case string) | used for details url
+- .name: station name
+- .country: country in charge of station
+- .images[]:
+    - .image: relative asset path
+    - .source: original source URL
+    - .license: license identifier (e.g. CC BY-SA 3.0, PD, PD-US-NSF)
+    - .caption: alt attribute description and display caption
+.year_established: int (YYYY)
 - .status:
     - .status.is_active:
         - true
@@ -100,28 +121,108 @@ stations.json file NOTES:
         - "operational" | Built and actively functioning
         - "decommissioned" | Formally closed by governing authority; operations permanently ceased
         - "abandoned" | Informally or historically deserted
-    - .status.operational_type: (only apply when "operational", else null | aligned with the Council of Managers of National Antarctic Programs' (COMNAP) official definition) 
+    - .status.operational_type: only apply when "operational", else null | aligned with the Council of Managers of National Antarctic Programs' (COMNAP) official definition
         - "year-round"
         - "seasonal"
         - null
-- .external_references[0].type: (type, authority, example)
-    - "official" | primary | National Antarctic Program
-    - "research_program" | primary scientific | Ice Core Initiative
-    - "archival" | historical record | National Archives
-    - "journalistic" | media | News feature, Scientific articles
-    - "educational_institutional" | institutional educational | NatGeo Education
-    - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
-    - "data_source" | scientific dataset | Climate database
+- .operators[]:
+    - .full: full organization name
+    - .abbr: abbreviation
+- .location
+    - .location_name — human-readable display string
+    - .zone: broadest geographic grouping 
+        - "antarctic-peninsula"
+        - "east-antarctica"
+        - "west-antarctica"
+    - .region: specific sub-area within zone
+        - (antarctic-peninsula):
+            - "trinity-peninsula"
+            - "anvers-island" (Palmer)
+            - "adelaide-island" (Rothera)
+            - "argentine-islands" (Vernadsky)
+            - "alexander-island"
+            - "graham-land"
+            - "palmer-land"
+            - "joinville-island"
+            - "james-ross-island"
+            - "south-shetland-islands"
+            - "south-orkney-islands"
+        - (east-antarctica):
+            - "weddell-sea"
+            - "queen-maud-land"
+            - "enderby-land"
+            - "mac-robertson-land"
+            - "princess-elizabeth-land"
+            - "wilhelm-ii-land"
+            - "queen-mary-land"
+            - "wilkes-land"
+            - "adelie-land"
+            - "george-v-land"
+            - "oates-land"
+            - "east-antarctic-plateau"
+            - "south-pole"
+            - "prydz-bay"
+            - "ingrid-christensen-coast"
+            - "shackleton-ice-shelf"
+        - (west-antarctica):
+            - "ross-sea"
+            - "ross-island"
+            - "ross-ice-shelf"
+            - "marie-byrd-land"
+            - "ellsworth-land"
+            - "ellsworth-mountains"
+            - "amundsen-sea"
+            - "pine-island-bay"
+            - "thurston-island"
+    - .coordinates.latitude: decimal degrees (float)
+    - .coordinates.longitude: decimal degrees (float)
+- .population:
+    - .summer: integer (peak austral summer headcount)
+    - .winter: integer (0 if seasonal/no winter crew)
+- .summary: one-sentence display description (string)
+- .description: full paragraph description (string)
+- .historical_note: historical context paragraph (string)
+- .research_focuses[]
+    - .desc: human-readable description
+    - .tag: (current all | last update: 2026-03-01)
+        - "astronomy"
+        - "atmospheric-science"
+        - "biology"
+        - "climate"
+        - "engineering"
+        - "geology"
+        - "geophysics"
+        - "glaciology"
+        - "human-physiology"
+        - "logistics"
+        - "marine-science"
+        - "oceanography"
+        - "paleoclimate"
+        - "physics"
+        - "space-weather"
+- .external_references[]:
+    - .type: (type, authority, example)
+        - "official" | primary | National Antarctic Program
+        - "research_program" | primary scientific | Ice Core Initiative
+        - "archival" | historical record | National Archives
+        - "journalistic" | media | News feature, Scientific articles
+        - "educational_institutional" | institutional educational | NatGeo Education
+        - "independent" | personal, uninstitutional content | Blog, Youtube video not from established institution
+        - "data_source" | scientific dataset | Climate database
+    - .site_name: display name of the source
+    - .label: descriptive link label
+    - .url: full URL
 - .metadata:
-    - .metadata.data_last_updated: (str (YYYY-MM-DD) | Most recent update date)
-    - .metadata.update_log[]:
-        - update_author: (Name of person or system updating record)
-        - update_date: (str (YYYY-MM-DD) | Date update was performed)
-        - is_reviewed[]: (null if unreviewed)
-            - reviewer_type: (Reviewer type (e.g. LLM/AI, community/unofficial, expert/official))
-            - reviewer: Name/identifier of reviewer
-            - date_reviewed: ( str (YYYY-MM-DD) | Date the review was completed)
-            - notes: (Verification notes and comments)
+    - data_last_updated: (str (YYYY-MM-DD) | Most recent update date)
+    - update_log[]:
+        - .update_author: (Name of person or system updating record)
+        - .update_date: (str (YYYY-MM-DD) | Date update was performed)
+        - .notes: description of changes made
+        - .is_reviewed[]: (null if unreviewed)
+            - .reviewer_type: (Reviewer type (e.g. LLM/AI, community/unofficial, expert/official))
+            - .reviewer: name/identifier of reviewer
+            - .date_reviewed: str (YYYY-MM-DD) | Date the review was completed
+            - .notes: verification notes and comments
 
 # React + Vite
 
