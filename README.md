@@ -57,7 +57,7 @@ implimentation code to further Antarctic Sciences.
         "summary": "",
         "description": "",
         "historical_note": "",
-        "research_focus": [
+        "research_focuses": [
             {
                 "desc": "",
                 "tag": ""
