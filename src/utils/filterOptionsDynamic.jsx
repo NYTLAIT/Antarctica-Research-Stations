@@ -14,16 +14,13 @@ export function getYearRange(stations) {
 }
 
 export function getOperators(stations) {
-    const operators = []
-    const knownOperators = new Set()
-    stations.forEach(station => {
-        station.operators.forEach(operator => {
-            if (operator.abbr && !knownOperators.has(operator.abbr)) {// Filter: ! -> bool, .has => if has
-                knownOperators.add(operator.abbr) // Track
-                operators.push({ abbr: operator.abbr, title: operator.full }) // Add to actual if pass
-            }
+    const operators = [...new Set(
+        stations.flatMap(station => {
+            return station.operators
+                .map(operator => operator.abbr)
+                .filter(Boolean)
         })
-    })
+    )]
     return operators
 }
 
@@ -33,7 +30,7 @@ export function getZones(stations) {
 }
 
 export function getRegionsUnderZones(stations, zones) {
-    const zones_regions = zones.map(zone => {
+    const zonesRegions = zones.map(zone => {
         const regions = [...new Set(
             stations
                 .filter(station => station.location.zone === zone)
@@ -41,28 +38,33 @@ export function getRegionsUnderZones(stations, zones) {
         )]
 
         return {
-            zone_name: kebabToDisplay(zone),
+            zoneName: kebabToDisplay(zone),
             regions: regions
         }
     })
-    return zones_regions
+    return zonesRegions
 }
 
-
-const winterPopulations = stations.map(station => station.population.winter);
-const summerPopulations = stations.map(station => station.population.summer);
-const winterMin = Math.min(...winterPopulations);
-const winterMax = Math.max(...winterPopulations);
-const summerMin = Math.min(...summerPopulations);
-const summerMax = Math.max(...summerPopulations);
-
-const researchFocuses = []
-const knownResearchFocuses = new Set()
-stations.forEach(station => {
-    station.research_focuses.forEach(focus => {
-        if (!knownResearchFocuses.has(focus.tag)) {
-            knownResearchFocuses.add(focus.tag)
-            researchFocuses.push(focus)
+export function getPopulationRanges(stations) {
+    const winterPopulations = stations.map(station => station.population.winter)
+    const summerPopulations = stations.map(station => station.population.summer)
+    return {
+        winter: {
+            min: Math.min(...winterPopulations),
+            max: Math.max(...winterPopulations)
+        },
+        summer: {
+            min: Math.min(...summerPopulations),
+            max: Math.max(...summerPopulations)
         }
-    })
-})
+    }
+}
+
+export function getResearchFocuses(stations) {
+    const researchFocuses = [...new Set(
+        stations.flatMap(station => {
+            return station.research_focuses.map(focus => focus.tag)
+        })
+    )]
+    return researchFocuses
+}
