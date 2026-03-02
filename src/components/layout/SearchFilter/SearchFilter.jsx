@@ -1,6 +1,9 @@
 import {useState} from 'react'
+import { createStateUpdater } from '../../../utils/helperFunctions';
 
 import './SearchFilter.css'
+import Input from '../../ui/inputs/Input/Input';
+import { createStaticHandler } from 'react-router-dom';
 
 function SearchFilter({stations}) {
     const [filters, setFilters] = useState({
@@ -15,6 +18,9 @@ function SearchFilter({stations}) {
         population: {season: null, min: null, max: null},
         researchFocus: []
     })
+
+    // Updating State
+    const updateState = createStateUpdater(setFilters)
 
     // Dynamically set option values
     const countries = [...new Set(stations.flatMap(station => station.country))]
@@ -34,7 +40,8 @@ function SearchFilter({stations}) {
         })
     })
 
-    
+    const zones = [...new Set(stations.map(station => station.location.zone))]
+    const regions = [...new Set(stations.map(station => station.location.region))]
 
     const winterPopulations = stations.map(station => station.population.winter);
     const summerPopulations = stations.map(station => station.population.summer);
@@ -55,11 +62,10 @@ function SearchFilter({stations}) {
     })
 
     // Hard code option values
-    const operationalStatuses = [
-        {status: "planned", title: "Station approved/proposed"},
-        {status: "under construction", title: "Actively being built; not operational" },
-        {status: "operational", title: "Built and actively functioning" },
-        {status: "decommissioned", title: "Formally closed; operations permanently ceased" },
-        {status: "abandoned", title: "Informally or historically deserted" },
-    ]
+
+    return (
+        <Input 
+            value={filters.query}
+            onInput={value => updateState("query", value)} />
+    )
 }
