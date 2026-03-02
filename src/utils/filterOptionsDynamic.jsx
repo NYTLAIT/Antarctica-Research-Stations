@@ -33,18 +33,18 @@ export function getZones(stations) {
 }
 
 export function getRegionsUnderZones(stations, zones) {
-    const zones_regions = []
-    zones.forEach(zone => {
-        const zone_regions = {
-            zone_name: kebabToDisplay(zone),
-            regions: []
-        }
-        stations
-            .filter(station => station.location.zone === zone)
-            .forEach(station => zone_regions.regions.push(station.location.region))
-        zones_regions.push(zone_regions)
-    })
+    const zones_regions = zones.map(zone => {
+        const regions = [...new Set(
+            stations
+                .filter(station => station.location.zone === zone)
+                .map(station => station.location.region)
+        )]
 
+        return {
+            zone_name: kebabToDisplay(zone),
+            regions: regions
+        }
+    })
     return zones_regions
 }
 
