@@ -3,7 +3,7 @@ import './Checkbox.css'
 function Checkbox({ label, name, values, selectedValues, onChange }) {
     const checkboxes = values.map(value => {
         const id = `${name}-${value}`
-        
+
         return (
             <label
                 key={value}
@@ -16,7 +16,7 @@ function Checkbox({ label, name, values, selectedValues, onChange }) {
                     type="checkbox"
                     name={name}
                     value={value}
-                    checked={selectedValues.includes(value)}
+                    checked={selectedValues.includes(value)} //includes checks if array has value and returns bool
                     onChange={(e) => onChange(name, e.target.value, e.target.checked)}
                 />
             </label>

@@ -10,10 +10,45 @@ export function kebabToDisplay(stringKebab) {
 
 export function createStateUpdater(setState) {
     return (
-        (value, field) => setState(previousState => {
+        (field, value, selected) => setState(previousState => {
+
+            currentField = previousState[field]
+
+            // Checkbox
+            if (Array.isArray(currentField) && typeof selected === "boolean") {
+                return {
+                    ...previousState, 
+                    [field]: selected // ternary operator | condition: if the field is selected
+                        ? [...currentField, value] // 
+                        : currentField.filter(element => element !== value)
+                };
+            }
+
+            if (typeof currentField === "object" 
+                && currentField !== null 
+                && ("min" in currentField || "max" in currentField)
+            ) {
+                return {
+                    ...previousState, 
+                    [field]: {
+                        ...currentField,
+                        ...other
+                    }
+                }
+            }
+
+
+            // Toggle 
+            if (typeof currentField === "boolean") {
+                return {
+                    ...previousState, [field]: value   
+                }
+            }
+
+            // Input
             return {
                 ...previousState, [field]: value
             }
         })
     )
-};
+}

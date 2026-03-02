@@ -1,31 +1,45 @@
 import {useState} from 'react'
 import { createStateUpdater } from '../../../utils/helperFunctions';
+import { getCountries } from '../../../utils/filterOptionsDynamic';
+import stations from '../../../stations.json'
 
 import './SearchFilter.css'
 import Input from '../../ui/inputs/Input/Input';
-import { createStaticHandler } from 'react-router-dom';
+import Checkbox from '../../ui/inputs/Checkbox/Checkbox';
 
-function SearchFilter({stations}) {
+function SearchFilter() {
     const [filters, setFilters] = useState({
     // Available filter values
         query: "",
-        country: [],
+        countries: [],
         yearRange: {min: null, max: null},
-        operationalStatus: [],
+        operationalStatuses: [],
         winterCrew: null,
-        operator: [],
-        location: [],
+        operators: [],
+        locations: [],
         population: {season: null, min: null, max: null},
-        researchFocus: []
+        researchFocuses: []
     })
 
     // Updating State
     const updateState = createStateUpdater(setFilters)
 
     return (
-        <Input 
-            label="Search for a Station"
-            value={filters.query}
-            onInput={value => updateState("query", value)} />
+        <div className="SearchFilter">
+            <Input 
+                label="Search for a Station"
+                name='query'
+                value={filters.query}
+                onInput={updateState}
+                />
+            <Checkbox 
+                label="Choose country"
+                name='countries'
+                values={getCountries(stations)}
+                selectedValues={filters.countries}
+                onChange={updateState}
+                />
+        </div>
     )
+        
 }

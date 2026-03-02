@@ -1,6 +1,6 @@
 import './Input.css'
 
-function Input({label, value, onInput}) {
+function Input({label, name, value, onInput}) {
     return (
         <div className='Input'>
             <label className='input-label' htmlFor='input-input'>
@@ -10,7 +10,7 @@ function Input({label, value, onInput}) {
                     className='input-input'
                     type='text' 
                     value={value}
-                    onInput={(e) => onInput(e.target.value)}
+                    onInput={(e) => onInput(name, e.target.value)}
                 />
             </label>
         </div>
