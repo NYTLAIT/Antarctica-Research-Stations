@@ -6,7 +6,8 @@ export const operationalStatuses = [
     { status: "abandoned", title: "Informally or historically deserted" },
 ]
 
-export const zones_regions = {
+// Data size unsatisfactory to use a schema based ui design | will not be using zonesRegions
+export const zonesRegions = {
     "antarctic-peninsula": [
         "trinity-peninsula",
         "anvers-island",

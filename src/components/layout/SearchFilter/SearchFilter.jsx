@@ -24,6 +24,7 @@ function SearchFilter({stations}) {
 
     return (
         <Input 
+            label="Search for a Station"
             value={filters.query}
             onInput={value => updateState("query", value)} />
     )
