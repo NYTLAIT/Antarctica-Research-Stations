@@ -52,7 +52,7 @@ export function createStateUpdater(setState) {
                 }
             }
 
-            // Input ([key]: str/int)
+            // Input ([key]: str/int/custom toggle)
             return {
                 ...previousState, [key]: value
             }

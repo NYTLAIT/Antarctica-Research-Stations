@@ -1,7 +1,11 @@
 import { kebabToDisplay } from "./helperFunctions"
 
+function rawZones(stations) {
+    return [...new Set(stations.map(station => station.location?.zone))].filter(Boolean)
+}
+
 export function getCountries(stations) {
-    const countries = [...new Set(stations.flatMap(station => station.country))]
+    const countries = [...new Set(stations.flatMap(station => station.country))].filter(Boolean)
     return countries
 } 
 
@@ -17,37 +21,46 @@ export function getOperators(stations) {
     const operators = [...new Set(
         stations.flatMap(station => {
             return station.operators
-                .map(operator => operator.abbr)
-                .filter(Boolean)
+                ?.map(operator => operator.abbr)
+                .filter(Boolean) ?? []
         })
     )]
     return operators
 }
 
 export function getZones(stations) {
-    const zones = [...new Set(stations.map(station => station.location.zone))]
-    return zones
+    return rawZones(stations).map(zone => ({
+        value: zone,
+        label: kebabToDisplay(zone)
+    }))
 }
 
-export function getRegionsUnderZones(stations, zones) {
-    const zonesRegions = zones.map(zone => {
-        const regions = [...new Set(
+export function getRegionsUnderZones(stations) {
+    return rawZones(stations).map(zone => {
+
+        const rawRegions = [...new Set(
             stations
-                .filter(station => station.location.zone === zone)
-                .map(station => station.location.region)
+                .filter(station => station.location?.zone === zone)
+                .map(station => station.location?.region)
+                .filter(Boolean)
         )]
 
         return {
-            zoneName: kebabToDisplay(zone),
-            regions: regions
+            zone: {
+                value: zone,
+                label: kebabToDisplay(zone)
+            },
+            regions: rawRegions.map(region => ({
+                value: region,
+                label: kebabToDisplay(region)
+            }))
         }
     })
-    return zonesRegions
 }
 
 export function getPopulationRanges(stations) {
-    const winterPopulations = stations.map(station => station.population.winter)
-    const summerPopulations = stations.map(station => station.population.summer)
+    const winterPopulations = stations.map(station => station.population?.winter).filter(Boolean)
+    const summerPopulations = stations.map(station => station.population?.summer).filter(Boolean)
     return {
         winter: {
             min: Math.min(...winterPopulations),
@@ -63,7 +76,9 @@ export function getPopulationRanges(stations) {
 export function getResearchFocuses(stations) {
     const researchFocuses = [...new Set(
         stations.flatMap(station => {
-            return station.research_focuses.map(focus => focus.tag)
+            return station.research_focuses
+                ?.map(focus => focus.tag)
+                .filter(Boolean) ?? []
         })
     )]
     return researchFocuses
