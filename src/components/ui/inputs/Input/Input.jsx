@@ -3,10 +3,10 @@ import './Input.css'
 function Input({label, name, value, onInput}) {
     return (
         <div className='Input'>
-            <label className='input-label' htmlFor='input-input'>
+            <label className='input-label' htmlFor={name}>
                 {label}
                 <input 
-                    id='input-input'
+                    id={name}
                     className='input-input'
                     type='text' 
                     value={value}

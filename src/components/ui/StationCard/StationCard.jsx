@@ -12,7 +12,7 @@ function StationCard(
         ? operators.map(operator => operator.abbr || '...').join(' | ')
         : 'Unknown operator'
 
-   const stationIsActive = status.is_active
+   const stationIsActive = status?.is_active
 
     return (
         <div className='StationCard'>

@@ -10,44 +10,51 @@ export function kebabToDisplay(stringKebab) {
 
 export function createStateUpdater(setState) {
     return (
-        (field, value, selected) => setState(previousState => {
+        (key, value, selected) => setState(previousState => {
+            // key: the field
+            // value: the new value
+            // selected: boolean (specifically to check which checkbox field is being touched, becomes undefined otherwise)
 
-            currentField = previousState[field]
+            const currentKey = previousState[key] // currentKey is the key being modified or looked at or changed
+                                            // contains same structure as key: value, where value is the keys value
+                                            // untouched
 
-            // Checkbox
-            if (Array.isArray(currentField) && typeof selected === "boolean") {
+            // Checkbox ([key]: list) 
+            if (Array.isArray(currentKey) 
+                && typeof selected === "boolean"
+            ) { 
                 return {
                     ...previousState, 
-                    [field]: selected // ternary operator | condition: if the field is selected
-                        ? [...currentField, value] // 
-                        : currentField.filter(element => element !== value)
+                    [key]: selected // ternary operator | condition: if the key is selected
+                        ? [...currentKey, value] // set key to have that value
+                        : currentKey.filter(element => element !== value)
                 };
             }
 
-            if (typeof currentField === "object" 
-                && currentField !== null 
-                && ("min" in currentField || "max" in currentField)
+            // Range Input /MinMax Input (lit just checks if it an object with min max keys)
+            if (typeof currentKey === "object"
+                && currentKey !== null 
+                && ("min" in currentKey || "max" in currentKey) 
             ) {
                 return {
                     ...previousState, 
-                    [field]: {
-                        ...currentField,
-                        ...other
+                    [key]: {
+                        ...currentKey,
+                        ...value
                     }
                 }
             }
 
-
-            // Toggle 
-            if (typeof currentField === "boolean") {
+            // Toggle ([key]: boolean)
+            if (typeof currentKey === "boolean") {
                 return {
-                    ...previousState, [field]: value   
+                    ...previousState, [key]: value 
                 }
             }
 
-            // Input
+            // Input ([key]: str/int)
             return {
-                ...previousState, [field]: value
+                ...previousState, [key]: value
             }
         })
     )
