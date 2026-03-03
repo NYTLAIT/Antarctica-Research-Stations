@@ -1,10 +1,10 @@
-import './Slider.css'
+import './RangeInput.css'
 
-function RangeInput({label, name, min, max, selectedMin, selectedMax, onInput}) {   
+function RangeInput({ label, name, min, max, selectedMin, selectedMax, onChange }) {
     return (
         <div className="RangeInput">
-            <label className="rangeinput-label" htmlFor={id}>
-                {label}
+            <p className="rangeinput-label">{label}</p>
+            <div className="rangeinput-inputs">
                 <label htmlFor={`${name}-min`}>
                     Min:
                     <input
@@ -12,25 +12,25 @@ function RangeInput({label, name, min, max, selectedMin, selectedMax, onInput}) 
                         className="rangeinput-min"
                         type="number"
                         min={min}
-                        max={selectedMax}
-                        value={selectedMin}
-                        onInput={e => onInput(name, {min: e.target.value})}
+                        max={selectedMax ?? max}
+                        value={selectedMin ?? ""}
+                        onChange={e => onChange(name, { min: Number(e.target.value) })}
                     />
                 </label>
-                <p>-</p>
+                <span>–</span>
                 <label htmlFor={`${name}-max`}>
                     Max:
                     <input
                         id={`${name}-max`}
                         className="rangeinput-max"
                         type="number"
-                        min={selectedMin}
+                        min={selectedMin ?? min}
                         max={max}
-                        value={selectedMax}
-                        onInput={e => onInput(name, {max: e.target.value})}
+                        value={selectedMax ?? ""}
+                        onChange={e => onChange(name, { max: Number(e.target.value) })}
                     />
                 </label>
-            </label>
+            </div>
         </div>
     )
 }

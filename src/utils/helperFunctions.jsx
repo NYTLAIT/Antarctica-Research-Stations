@@ -10,52 +10,34 @@ export function kebabToDisplay(stringKebab) {
 
 export function createStateUpdater(setState) {
     return (
-        (key, value, selected) => setState(previousState => {
+        (key, value) => setState(previousState => {
             // key: the field
             // value: the new value
-            // selected: boolean (specifically to check which checkbox field is being touched, becomes undefined otherwise)
 
-            const currentKey = previousState[key] // currentKey is the key being modified or looked at or changed
-                                            // contains same structure as key: value, where value is the keys value
-                                            // untouched
-
-            // Checkbox ([key]: list) 
-            if (Array.isArray(currentKey) 
-                && typeof selected === "boolean"
-            ) { 
+            const keys = key.split(".") // support nested
+            if (keys.length > 1) {
+                const [parentKey, childKey] = keys
                 return {
-                    ...previousState, 
-                    [key]: selected // ternary operator | condition: if the key is selected
-                        ? [...currentKey, value] // set key to have that value
-                        : currentKey.filter(element => element !== value)
-                };
+                    ...previousState,
+                    [parentKey]: {...previousState[parentKey], [childKey]: value}
+                }
             }
 
+            const currentValue = previousState[key]
+
             // Range Input /MinMax Input (lit just checks if it an object with min max keys)
-            if (typeof currentKey === "object"
-                && currentKey !== null 
-                && ("min" in currentKey || "max" in currentKey) 
+            if (typeof currentValue === "object"
+                && currentValue !== null 
+                && ("min" in currentValue || "max" in currentValue) 
             ) {
                 return {
                     ...previousState, 
-                    [key]: {
-                        ...currentKey,
-                        ...value
-                    }
+                    [key]: {...currentValue, ...value}
                 }
             }
 
-            // Toggle ([key]: boolean)
-            if (typeof currentKey === "boolean") {
-                return {
-                    ...previousState, [key]: value 
-                }
-            }
-
-            // Input ([key]: str/int/custom toggle)
-            return {
-                ...previousState, [key]: value
-            }
+            // Toggle, Input, direct replacements
+            return { ...previousState, [key]: value }
         })
     )
 }

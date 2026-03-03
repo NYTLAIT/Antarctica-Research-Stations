@@ -1,16 +1,16 @@
 import './Input.css'
 
-function Input({label, name, value, onInput}) {
+function Input({ label, name, value, onChange }) {
     return (
         <div className='Input'>
             <label className='input-label' htmlFor={name}>
                 {label}
-                <input 
+                <input
                     id={name}
                     className='input-input'
-                    type='text' 
+                    type='text'
                     value={value}
-                    onInput={(e) => onInput(name, e.target.value)}
+                    onChange={(e) => onChange(name, e.target.value)}
                 />
             </label>
         </div>
