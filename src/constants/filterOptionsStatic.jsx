@@ -1,9 +1,9 @@
 export const operationalStatuses = [
+    { value: "abandoned", label: "Abandoned", title: "Informally or historically deserted" },
+    { value: "decommissioned", label: "Decommissioned", title: "Formally closed; operations permanently ceased" },
+    { value: "operational", label: "Operational", title: "Built and actively functioning" },
     { value: "planned", label: "Planned", title: "Station approved/proposed" },
     { value: "under-construction", label: "Under Construction", title: "Actively being built; not operational" },
-    { value: "operational", label: "Operational", title: "Built and actively functioning" },
-    { value: "decommissioned", label: "Decommissioned", title: "Formally closed; operations permanently ceased" },
-    { value: "abandoned", label: "Abandoned", title: "Informally or historically deserted" },
 ]
 
 // Data size unsatisfactory to use a schema based ui design | will not be using zonesRegions

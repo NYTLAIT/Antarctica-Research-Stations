@@ -20,7 +20,7 @@ function Checkbox({ label, name, keys, selectedValues, onChange }) {
                 key={value} 
                 className="checkbox-label" 
                 htmlFor={id} 
-                title={title}> {displayLabel}
+                title={title}>
                 <input
                     id={id}
                     className="checkbox-input"
@@ -30,6 +30,7 @@ function Checkbox({ label, name, keys, selectedValues, onChange }) {
                     checked={selectedValues.includes(value)}
                     onChange={checkboxSet}
                 />
+                {displayLabel}
             </label>
         )
     })

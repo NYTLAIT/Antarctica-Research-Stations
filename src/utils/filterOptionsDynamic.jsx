@@ -5,7 +5,10 @@ function rawZones(stations) {
 }
 
 export function getCountries(stations) {
-    const countries = [...new Set(stations.flatMap(station => station.country))].filter(Boolean)
+    const countries = [...new Set(stations
+        .flatMap(station => station.country))]
+        .filter(Boolean)
+        .sort()
     return countries
 } 
 
@@ -24,15 +27,16 @@ export function getOperators(stations) {
                 ?.map(operator => operator.abbr)
                 .filter(Boolean) ?? []
         })
-    )]
+    )].sort()
     return operators
 }
 
 export function getZones(stations) {
-    return rawZones(stations).map(zone => ({
-        value: zone,
-        label: kebabToDisplay(zone)
-    }))
+    return rawZones(stations)
+        .map(zone => ({
+            value: zone, 
+            label: kebabToDisplay(zone)
+    })).sort((value, label) => value.label.localeCompare(label.label))
 }
 
 export function getRegionsUnderZones(stations) {
@@ -43,7 +47,7 @@ export function getRegionsUnderZones(stations) {
                 .filter(station => station.location?.zone === zone)
                 .map(station => station.location?.region)
                 .filter(Boolean)
-        )]
+        )].sort()
 
         return {
             zone: {
@@ -80,6 +84,6 @@ export function getResearchFocuses(stations) {
                 ?.map(focus => focus.tag)
                 .filter(Boolean) ?? []
         })
-    )]
+    )].sort()
     return researchFocuses
 }

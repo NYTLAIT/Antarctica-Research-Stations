@@ -1,0 +1,23 @@
+.Checkbox {
+    margin-bottom: 1rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.checkbox-label:hover {
+    background-color: var(--bg-hover);
+}
+
+.checkbox-input {
+    accent-color: var(--accent-color);
+
+    width: 1rem;
+    height: 1rem;
+}
