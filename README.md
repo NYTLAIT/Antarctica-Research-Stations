@@ -1,3 +1,7 @@
+WORK IN PROGRESS, FILTER WORKS BUT EVERYTHING IS A MESS
+
+
+
 # ABOUT PROJECT: Antarctica Research Stations
 The goal of this project is to 
 
