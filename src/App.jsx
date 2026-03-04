@@ -3,8 +3,7 @@ import './App.css'
 import Header from './components/persistant/Header/Header'
 import Footer from './components/persistant/Footer/Footer'
 import Hero from './components/layout/Hero/Hero'
-import StationsGrid from './components/layout/StationsGrid/StationsGrid'
-import SearchFilter from './components/layout/SearchFilter/SearchFilter'
+import Explorer from './components/layout/Explorer/Explorer'
 
 function App() {
 
@@ -12,10 +11,7 @@ function App() {
         <div className='App'>
             <Header />
             <Hero />
-            <div className="explorer">
-                <SearchFilter />
-                <StationsGrid />
-            </div>
+            <Explorer />
             <Footer />
         </div>
     )

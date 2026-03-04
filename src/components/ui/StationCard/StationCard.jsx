@@ -2,7 +2,7 @@ import './StationCard.css'
 import imagePlaceHolder from '../../../assets/images/stations/defaultImage_PalmerStation_MountFrancais.jpg'
 
 function StationCard(
-    {id, name, country, images, year_established, status, operators, location, summary}
+    {id, name, country, images, yearEstablished, status, operators, location, summary}
 ) {
     
     const img = imagePlaceHolder

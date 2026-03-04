@@ -21,14 +21,19 @@ export function getYearRange(stations) {
 }
 
 export function getOperators(stations) {
-    const operators = [...new Set(
-        stations.flatMap(station => {
-            return station.operators
-                ?.map(operator => operator.abbr)
-                .filter(Boolean) ?? []
-        })
-    )].sort()
-    return operators
+    return stations
+        .flatMap(station => 
+            station.operators?.map(operator => ({
+                value: operator.abbr,
+                label: operator.abbr,
+                title: operator.full
+            })).filter(Boolean) ?? []
+        )
+        .filter((operator, index, theArray) => 
+            index === theArray.findIndex(object => object.value === operator.value)
+        )
+        .sort((a, b) => a.value.localeCompare(b.value))
+    
 }
 
 export function getZones(stations) {
@@ -36,14 +41,13 @@ export function getZones(stations) {
         .map(zone => ({
             value: zone, 
             label: kebabToDisplay(zone)
-    })).sort((value, label) => value.label.localeCompare(label.label))
+    })).sort((a, b) => a.label.localeCompare(b.label))
 }
 
 export function getRegionsUnderZones(stations) {
     return rawZones(stations).map(zone => {
 
-        const rawRegions = [...new Set(
-            stations
+        const rawRegions = [...new Set(stations
                 .filter(station => station.location?.zone === zone)
                 .map(station => station.location?.region)
                 .filter(Boolean)
