@@ -19,8 +19,8 @@ Data driven inputs for selction (e.g. checkbox options populated by what is in t
 - CSS
 
 # Dev Notes
-This project is not for production but rather my exploration.
-Areas that have been explored include:
+This project is not for production but rather my exploration in my interests and academics.
+Teachnical areas that have been explored include:
 - UI layout systems
 - filtering architecture with vite
 - long-term data schema design
