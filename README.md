@@ -1,19 +1,44 @@
-WORK IN PROGRESS, FILTER WORKS BUT EVERYTHING IS A MESS
+# Antarctica Research Stations
+The goal of this project is to create a site showcasing Antarctica Research Stations in an intuitive and searacble manner. 
 
-
-
-# ABOUT PROJECT: Antarctica Research Stations
-The goal of this project is to 
-
-## DEV NOTE: 
-Personal interests drove the project to be one of a long term goal of helping antarctic information be more accessible to the general public. As such, this project is a milestone and initiation of antarctic based work and exploration of cases of possible utilization and
+## About: 
+Personal interests drove the creation of this project project to be one about helping antarctic information be more accessible to the general public. As such, this project is a milestone and initiation of antarctic based work and exploration of cases of possible utilization and
 implimentation code to further Antarctic Sciences.
 
-# DATA SOURCES:
-- 
+This project has also served as a techinal practice, utilization, and learning project: where I delve deeper to understand the syntax and work flow of react, especially the built in useState; work and rework data structures to be as good as possible; practice concepts such as encapsulation, dry, and being modal.
 
-# ABOUT STRUCTURE:
-## STYLING NOTES:
+# DATA SOURCES:
+Perplexity AI for the initial population of data in the json structure instructed to search from official antarctic focused institutions or adjunc institutions.
+Claude was then used to rework the data several times when I changed the json structure. 
+
+# FEATURE
+Data driven inputs for selction (e.g. checkbox options populated by what is in the data)
+
+# Tech Stack
+- React (Vite) 
+- CSS
+
+# Dev Notes
+This project is not for production but rather my exploration.
+Areas that have been explored include:
+- UI layout systems
+- filtering architecture with vite
+- long-term data schema design
+
+Future techinal goals:
+- Using vite in full stack web (flask and sql)
+- react-render-dom routing
+- more dynamic ui
+
+# ABOUT SOME STRUCTURE:
+## LOGIC:
+The explorer page is built around three components:
+- The explorer component handles the state which is passed on to the search filter
+- The search filter creates inputs based on the son file and handles changes of the state
+- The stations grid renders the filtered stations after the explorer component uses state to match what the user has inputed in the search filter.
+
+## STYLING NOTES - Experimenting with CSS defaults and var:
+
 - FONT SIZES_260228 12:10AM (Element: Font-size | Line-height | Weight | Notes)
     - h1: 2.6–3.6rem | 1.2 | 600 | Titles
     - h2: 1.8–2.8rem | 1.26 | 540 | Sections
@@ -22,6 +47,24 @@ implimentation code to further Antarctic Sciences.
         - p.muted: 0.86–1rem  | 1.4 | 400 | Subtle info / captions / footers
 
 - TOGGLE 'DEFAULT(LIGHT) | DARK' COLOR THEMES (VARIABLE LAYOUT):
+    --bg-primary: #e8f0f6;
+    /* controls | smaller */
+    --bg-secondary: #fcfeff;
+    /* headings | strong */
+    --text-main: #1e3a8a;
+    /* main body | medium */
+    --text-primary: #2b3f5c;
+    /* muted text | subtle */
+    --text-secondary: #bbb4c2;
+    /* buttons and strong links | strong */
+    --accent-main: #4b789b;
+    --accent-main-rgb: 75, 120, 155;
+    /* hover states | medium */
+    --accent-primary: #3a7dce;
+    --accent-primary-rgb: 58, 125, 206;
+    /* subtle borders and tags | subtle */
+    --accent-secondary: #b9cbda;
+    --accent-secondary-rgb: 185, 203, 218;
 
 ## JSON FILE TEMPLATE:
 ```json
@@ -227,20 +270,3 @@ stations.json file SCHEMA REFERENCE:
             - .reviewer: name/identifier of reviewer
             - .date_reviewed: str (YYYY-MM-DD) | Date the review was completed
             - .notes: verification notes and comments
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -18,10 +18,10 @@ function Header() {
                     to="/map">
                         Map</NavLink> */}
                 
-                <NavLink
+                {/* <NavLink
                     className={({ isActive }) => `nav-link${isActive ? ' nav-link-active' : ''}`}
                     to="/about">
-                        About</NavLink>
+                        About</NavLink> */}
             </div>
         </header>
     )

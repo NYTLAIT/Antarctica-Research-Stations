@@ -8,12 +8,12 @@
     border-radius: 8px;
 }
 
-.StationCard:hover {
+/* .StationCard:hover {
     transform: translateY(-8px);
     background-color: var(--bg-primary);
     border-color: var(--accent-primary);
     box-shadow: 0 11px 18px rgba(var(--accent-primary-rgb), 0.2);
-}
+} */
 
 .StationCard .station-image {
     width: 100%;
