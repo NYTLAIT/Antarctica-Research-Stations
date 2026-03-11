@@ -1,4 +1,4 @@
-Details Page Incomplete | Only Filter is Working
+Details Page Incomplete | Only Filter is Working |
 Will Apply to Master Antarctic Program with Full Stack - Vite, Flask, SQl
 
 # Antarctica Research Stations
