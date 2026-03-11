@@ -1,3 +1,6 @@
+Details Page Incomplete | Only Filter is Working
+Will Apply to Master Antarctic Program with Full Stack - Vite, Flask, SQl
+
 # Antarctica Research Stations
 The goal of this project is to create a site showcasing Antarctica Research Stations in an intuitive and searacble manner. 
 
